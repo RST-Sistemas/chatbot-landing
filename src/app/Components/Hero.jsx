@@ -4,7 +4,7 @@ import { HiArrowRight } from "react-icons/hi2";
 
 const Hero = () => {
   return (
-    <div className='flex flex-col items-center w-full h-screen gap-5 md:justify-between md:items-start bg-secondary md:flex-row md:px-24'>
+    <div className='flex flex-col items-center w-full h-screen gap-5 pt-10 md:justify-between md:items-start bg-secondary md:flex-row md:px-24'>
       <div className='flex flex-col gap-5 md:mt-10'>
         <h1 className='text-[28px] w-[316px] font-bold text-accent leading-8 md:text-[60px] md:w-[410px] md:leading-[70px]'>
           Haz crecer tu negocio con ChatBot
@@ -28,12 +28,12 @@ const Hero = () => {
 
 export default Hero;
 
-const RobotHero = () => {
+const RobotHero = ({ width = 1000, height = 1200 }) => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width='1001'
-      height='1222'
+      width={width}
+      height={height}
       fill='none'
       viewBox='0 0 401 622'
     >
