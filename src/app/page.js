@@ -2,10 +2,10 @@
 import Hero from "@/app/Components/Hero";
 import FAQ from "@/app/Components/FAQ";
 import Footer from "@/app/Components/Footer";
-import Feature from "./Components/Feature";
-import Testimonials from "./Components/Testimonials";
-import PriceTable from "./Components/PriceTable";
-import Contact from "./Components/Contact";
+import Feature from "@/app/Components/Feature";
+import Testimonials from "@app/Components/Testimonials";
+import PriceTable from "@/app/Components/PriceTable";
+import Contact from "@/app/Components/Contact";
 
 export default function Home() {
 	return (
