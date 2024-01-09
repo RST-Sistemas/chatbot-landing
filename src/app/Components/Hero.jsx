@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className='flex flex-col items-center lg:items-start  w-full h-[600px] gap-5 pt-10 bg-secondary lg:flex-row lg:justify-between lg:px-44'>
+    <div className='flex flex-col items-center lg:items-start  w-full lg:h-[99vh] gap-5 pt-10 bg-secondary lg:flex-row lg:justify-between lg:px-44'>
       <div className='flex flex-col gap-5 lg:mt-10'>
         <h1 className='text-[28px] w-[316px] font-bold text-accent leading-8 lg:text-[60px] lg:w-[410px] lg:leading-[70px]'>
           Haz crecer tu negocio con ChatBot
