@@ -1,6 +1,8 @@
 /** @format */
 
 import React from "react";
+import Link from "next/link";
+import ButtonContactar from "./ButtonContactar";
 
 const PriceTable = () => {
 	return (
@@ -8,28 +10,28 @@ const PriceTable = () => {
 			<div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
 				<div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
 					<h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-						Designed for business teams like yours
+						Compra tu plan de ChatBot sin cargos extras
 					</h2>
-					<p className="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
-						Here at Flowbite we focus on markets where technology, innovation,
-						and capital can unlock long-term value and drive economic growth.
+					<p className="mb-5 font-light text-sm text-gray-500 sm:text-lg dark:text-gray-400">
+						Aquí en RST nos enfocamos en mercados donde la tecnología, la
+						innovación, y el capital puede liberar valor a largo plazo e
+						impulsar el crecimiento económico.
 					</p>
 				</div>
 				<div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-					{/* <!-- Pricing Card --> */}
 					<div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-						<h3 className="mb-4 text-2xl font-semibold">Starter</h3>
+						<h3 className="mb-4 text-2xl font-semibold text-yellow-300">
+							Inicial
+						</h3>
 						<p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-							Best option for personal use & for your next project.
+							La mejor opcion para emprendedores.
 						</p>
 						<div className="flex justify-center items-baseline my-8">
-							<span className="mr-2 text-5xl font-extrabold">$29</span>
-							<span className="text-gray-500 dark:text-gray-400">/month</span>
+							<span className="mr-2 text-5xl font-extrabold">$120.000</span>
+							<span className="text-gray-500 dark:text-gray-400">Unico</span>
 						</div>
-						{/* <!-- List --> */}
-						<ul role="list" class="mb-8 space-y-4 text-left">
+						<ul role="list" className="mb-8 space-y-4 text-left">
 							<li className="flex items-center space-x-3">
-								{/* <!-- Icon --> */}
 								<svg
 									className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
 									fill="currentColor"
@@ -40,10 +42,9 @@ const PriceTable = () => {
 										d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
 										clip-rule="evenodd"></path>
 								</svg>
-								<span>Individual configuration</span>
+								<span>1000 chats por mes</span>
 							</li>
 							<li className="flex items-center space-x-3">
-								{/* <!-- Icon --> */}
 								<svg
 									className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
 									fill="currentColor"
@@ -54,10 +55,9 @@ const PriceTable = () => {
 										d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
 										clip-rule="evenodd"></path>
 								</svg>
-								<span>No setup, or hidden fees</span>
+								<span>Unica Instalacion con integraciones</span>
 							</li>
 							<li className="flex items-center space-x-3">
-								{/* <!-- Icon --> */}
 								<svg
 									className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
 									fill="currentColor"
@@ -69,11 +69,11 @@ const PriceTable = () => {
 										clip-rule="evenodd"></path>
 								</svg>
 								<span>
-									Team size: <span className="font-semibold">1 developer</span>
+									Asistencia{" "}
+									<span className="font-semibold">Personalizada</span>
 								</span>
 							</li>
 							<li className="flex items-center space-x-3">
-								{/* <!-- Icon --> */}
 								<svg
 									className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
 									fill="currentColor"
@@ -85,12 +85,11 @@ const PriceTable = () => {
 										clip-rule="evenodd"></path>
 								</svg>
 								<span>
-									Premium support:{" "}
-									<span className="font-semibold">6 months</span>
+									Campañas de
+									<span className="font-semibold"> Difusion</span>
 								</span>
 							</li>
 							<li className="flex items-center space-x-3">
-								{/* <!-- Icon --> */}
 								<svg
 									className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
 									fill="currentColor"
@@ -102,30 +101,31 @@ const PriceTable = () => {
 										clip-rule="evenodd"></path>
 								</svg>
 								<span>
-									Free updates: <span className="font-semibold">6 months</span>
+									Autogestion <span className="font-semibold">de flujos</span>
 								</span>
 							</li>
 						</ul>
-						<a
+						<Link
 							href="#"
 							className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">
-							Get started
-						</a>
+							<ButtonContactar />
+						</Link>
 					</div>
-					{/* <!-- Pricing Card --> */}
+
 					<div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-						<h3 className="mb-4 text-2xl font-semibold">Company</h3>
+						<h3 className="mb-4 text-2xl font-semibold text-yellow-400">
+							Premiun
+						</h3>
 						<p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-							Relevant for multiple users, extended & premium support.
+							Ideal para PyMEs con un foco medio de comunicacion
 						</p>
 						<div className="flex justify-center items-baseline my-8">
-							<span className="mr-2 text-5xl font-extrabold">$99</span>
-							<span className="text-gray-500 dark:text-gray-400">/month</span>
+							<span className="mr-2 text-5xl font-extrabold">$185.000</span>
+							<span className="text-gray-500 dark:text-gray-400">/mes</span>
 						</div>
-						{/* <!-- List --> */}
+
 						<ul role="list" className="mb-8 space-y-4 text-left">
 							<li className="flex items-center space-x-3">
-								{/* <!-- Icon --> */}
 								<svg
 									className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
 									fill="currentColor"
@@ -136,10 +136,9 @@ const PriceTable = () => {
 										d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
 										clip-rule="evenodd"></path>
 								</svg>
-								<span>Individual configuration</span>
+								<span>Hasta 15000 chats mensuales</span>
 							</li>
 							<li className="flex items-center space-x-3">
-								{/* <!-- Icon --> */}
 								<svg
 									className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
 									fill="currentColor"
@@ -150,10 +149,9 @@ const PriceTable = () => {
 										d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
 										clip-rule="evenodd"></path>
 								</svg>
-								<span>No setup, or hidden fees</span>
+								<span>Integracion completa</span>
 							</li>
 							<li className="flex items-center space-x-3">
-								{/* <!-- Icon --> */}
 								<svg
 									className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
 									fill="currentColor"
@@ -165,12 +163,11 @@ const PriceTable = () => {
 										clip-rule="evenodd"></path>
 								</svg>
 								<span>
-									Team size:{" "}
-									<span className="font-semibold">10 developers</span>
+									Flujos
+									<span className="font-semibold"> comunicacionales</span>
 								</span>
 							</li>
 							<li className="flex items-center space-x-3">
-								{/* <!-- Icon --> */}
 								<svg
 									className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
 									fill="currentColor"
@@ -182,12 +179,11 @@ const PriceTable = () => {
 										clip-rule="evenodd"></path>
 								</svg>
 								<span>
-									Premium support:{" "}
-									<span className="font-semibold">24 months</span>
+									Flexibilidad
+									<span className="font-semibold"> Autonomia</span>
 								</span>
 							</li>
 							<li className="flex items-center space-x-3">
-								{/* <!-- Icon --> */}
 								<svg
 									className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
 									fill="currentColor"
@@ -199,30 +195,35 @@ const PriceTable = () => {
 										clip-rule="evenodd"></path>
 								</svg>
 								<span>
-									Free updates: <span className="font-semibold">24 months</span>
+									Marketing
+									<span className="font-semibold">
+										{" "}
+										sobre campañas de difusion
+									</span>
 								</span>
 							</li>
 						</ul>
-						<a
+						<Link
 							href="#"
 							className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">
-							Get started
-						</a>
+							<ButtonContactar />
+						</Link>
 					</div>
-					{/* <!-- Pricing Card --> */}
+
 					<div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-						<h3 className="mb-4 text-2xl font-semibold">Enterprise</h3>
+						<h3 className="mb-4 text-2xl font-semibold text-yellow-500">
+							Enterprise
+						</h3>
 						<p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-							Best for large scale uses and extended redistribution rights.
+							Ideal para empresas de alto transito comunicacional.
 						</p>
 						<div className="flex justify-center items-baseline my-8">
-							<span className="mr-2 text-5xl font-extrabold">$499</span>
-							<span className="text-gray-500 dark:text-gray-400">/month</span>
+							<span className="mr-2 text-5xl font-extrabold">$300.000</span>
+							<span className="text-gray-500 dark:text-gray-400">/mes</span>
 						</div>
-						{/* <!-- List --> */}
+
 						<ul role="list" className="mb-8 space-y-4 text-left">
 							<li className="flex items-center space-x-3">
-								{/* <!-- Icon --> */}
 								<svg
 									class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
 									fill="currentColor"
@@ -233,10 +234,9 @@ const PriceTable = () => {
 										d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
 										clip-rule="evenodd"></path>
 								</svg>
-								<span>Individual configuration</span>
+								<span>60.000 chats válidos/mes</span>
 							</li>
 							<li className="flex items-center space-x-3">
-								{/* <!-- Icon --> */}
 								<svg
 									className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
 									fill="currentColor"
@@ -247,7 +247,7 @@ const PriceTable = () => {
 										d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
 										clip-rule="evenodd"></path>
 								</svg>
-								<span>No setup, or hidden fees</span>
+								<span>Multiagente</span>
 							</li>
 							<li className="flex items-center space-x-3">
 								{/* <!-- Icon --> */}
@@ -262,8 +262,8 @@ const PriceTable = () => {
 										clip-rule="evenodd"></path>
 								</svg>
 								<span>
-									Team size:{" "}
-									<span className="font-semibold">100+ developers</span>
+									Asistencia Personalizada:{" "}
+									<span className="font-semibold"> todo el mes</span>
 								</span>
 							</li>
 							<li className="flex items-center space-x-3">
@@ -279,12 +279,11 @@ const PriceTable = () => {
 										clip-rule="evenodd"></path>
 								</svg>
 								<span>
-									Premium support:{" "}
-									<span className="font-semibold">36 months</span>
+									Asesoramiento en difusiones{" "}
+									<span className="font-semibold">Marketing</span>
 								</span>
 							</li>
 							<li className="flex items-center space-x-3">
-								{/* <!-- Icon --> */}
 								<svg
 									className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
 									fill="currentColor"
@@ -296,15 +295,15 @@ const PriceTable = () => {
 										clip-rule="evenodd"></path>
 								</svg>
 								<span>
-									Free updates: <span className="font-semibold">36 months</span>
+									Flexibilidad <span className="font-semibold"> Autonomia</span>
 								</span>
 							</li>
 						</ul>
-						<a
+						<Link
 							href="#"
 							className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">
-							Get started
-						</a>
+							<ButtonContactar />
+						</Link>
 					</div>
 				</div>
 			</div>
