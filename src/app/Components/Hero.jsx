@@ -11,7 +11,7 @@ const Hero = () => {
         <h1 className='text-[28px] w-[316px] font-bold text-accent leading-8 lg:text-[60px] lg:w-[410px] lg:leading-[70px]'>
           Haz crecer tu negocio con ChatBot
         </h1>
-        <h3 className='text-accent w-[299px] lg:text-[24px]'>
+        <h3 className='text-accent w-[299px] lg:text-2xl'>
           Automatiza y mejora las ventas en WhatsApp
         </h3>
         <button className='w-full max-w-[254px] flex-row flex items-center  text-white shadow-md btn btn-primary'>
