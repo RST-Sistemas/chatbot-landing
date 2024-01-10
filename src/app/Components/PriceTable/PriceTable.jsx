@@ -10,7 +10,7 @@ const Package = ({ title, description, price, listItems, url }) => {};
 const PriceTable = () => {
   return (
     <section className='bg-white dark:bg-gray-100'>
-      <div className='max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:px-6'>
+      <div className='max-w-screen-xl px-4 pt-8 mx-auto lg:py-16 lg:px-6'>
         <div className='max-w-screen-md mx-auto mb-8 text-center lg:mb-12'>
           <h2 className='mb-4 text-4xl font-extrabold tracking-tight text-accent dark:text-white'>
             Compra tu plan de ChatBot sin cargos extras
