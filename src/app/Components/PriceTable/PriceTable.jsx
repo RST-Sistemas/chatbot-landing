@@ -5,74 +5,7 @@ import Link from "next/link";
 import ButtonContactar from "../ButtonContactar";
 import Items from "./components/Items";
 
-const listItems = {
-  inicial: [
-    {
-      text: "1000 chats por mes",
-      bold: "",
-    },
-    {
-      text: "Unica Instalacion con integraciones",
-      bold: "",
-    },
-    {
-      text: "Asistencia",
-      bold: "Personalizada",
-    },
-    {
-      text: "Campañas de",
-      bold: "Difusion",
-    },
-    {
-      text: "Autogestion ",
-      bold: "de flujos",
-    },
-  ],
-  premium: [
-    {
-      text: "Hasta 15000 chats mensuales",
-      bold: "",
-    },
-    {
-      text: "Integracion completa",
-      bold: "",
-    },
-    {
-      text: "Flujos ",
-      bold: "comunicacionales",
-    },
-    {
-      text: "Flexibilidad ",
-      bold: "Autonomia",
-    },
-    {
-      text: "Marketing  ",
-      bold: "sobre campañas de difusion",
-    },
-  ],
-  enterprise: [
-    {
-      text: "60.000 chats válidos/mes",
-      bold: "",
-    },
-    {
-      text: "Multiagente",
-      bold: "",
-    },
-    {
-      text: "Asistencia Personalizada:",
-      bold: "todo el mes",
-    },
-    {
-      text: "Asesoramiento en difusiones",
-      bold: "Marketing",
-    },
-    {
-      text: "Flexibilidad",
-      bold: "Autonomia",
-    },
-  ],
-};
+const Package = ({ title, description, price, listItems, url }) => {};
 
 const PriceTable = () => {
   return (
@@ -162,6 +95,75 @@ const PriceTable = () => {
       </div>
     </section>
   );
+};
+
+const listItems = {
+  inicial: [
+    {
+      text: "1000 chats por mes",
+      bold: "",
+    },
+    {
+      text: "Unica Instalacion con integraciones",
+      bold: "",
+    },
+    {
+      text: "Asistencia",
+      bold: "Personalizada",
+    },
+    {
+      text: "Campañas de",
+      bold: "Difusion",
+    },
+    {
+      text: "Autogestion ",
+      bold: "de flujos",
+    },
+  ],
+  premium: [
+    {
+      text: "Hasta 15000 chats mensuales",
+      bold: "",
+    },
+    {
+      text: "Integracion completa",
+      bold: "",
+    },
+    {
+      text: "Flujos ",
+      bold: "comunicacionales",
+    },
+    {
+      text: "Flexibilidad ",
+      bold: "Autonomia",
+    },
+    {
+      text: "Marketing  ",
+      bold: "sobre campañas de difusion",
+    },
+  ],
+  enterprise: [
+    {
+      text: "60.000 chats válidos/mes",
+      bold: "",
+    },
+    {
+      text: "Multiagente",
+      bold: "",
+    },
+    {
+      text: "Asistencia Personalizada:",
+      bold: "todo el mes",
+    },
+    {
+      text: "Asesoramiento en difusiones",
+      bold: "Marketing",
+    },
+    {
+      text: "Flexibilidad",
+      bold: "Autonomia",
+    },
+  ],
 };
 
 export default PriceTable;
