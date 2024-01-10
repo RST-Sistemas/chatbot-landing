@@ -2,6 +2,8 @@
 
 import TyC from "./components/TyC";
 import Input from "./components/Input";
+import Image from "next/image";
+import RobotContact from "../../../../public/assets/image/robot-contact.svg";
 
 const Contact = () => {
   return (
@@ -31,6 +33,11 @@ const Contact = () => {
       <button className='flex flex-row items-center w-full text-white shadow-md btn btn-primary'>
         Contactar
       </button>
+      <Image
+        src={RobotContact}
+        alt='robot-contact'
+        className='absolute hidden mt-32 left-14 lg:inline'
+      />
     </div>
   );
 };

@@ -1,6 +1,8 @@
 /** @format */
 
 import Collapse from "./components/Collapse";
+import RobotFAQ from "../../../../public/assets/image/robot-faq.svg";
+import Image from "next/image";
 
 const FAQ = () => {
   return (
@@ -11,6 +13,11 @@ const FAQ = () => {
           <Collapse key={index} data={data} />
         ))}
       </div>
+      <Image
+        src={RobotFAQ}
+        alt={"robot-faq"}
+        className='absolute hidden right-5 mt-[-120px] lg:inline '
+      />
     </div>
   );
 };
