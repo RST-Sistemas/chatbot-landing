@@ -15,8 +15,11 @@ export default function Home() {
       <Hero />
       <div className='px-10 md:px-22 lg:px-44'>
         <PriceTable />
+        <hr className='my-10' />
         <Testimonials />
+        <hr className='my-10' />
         <Feature />
+        <hr className='my-10' />
         <FAQ />
         <Contact />
       </div>
