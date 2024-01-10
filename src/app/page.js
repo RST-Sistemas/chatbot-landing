@@ -1,15 +1,27 @@
 /** @format */
 
 import {
-  Contact,
-  FAQ,
-  Feature,
-  Hero,
-  PriceTable,
-  Testimonials,
+	Contact,
+	FAQ,
+	Feature,
+	Hero,
+	PriceTable,
+	Testimonials,
 } from "@/app/Components";
 
 export default function Home() {
+<<<<<<< HEAD
+	return (
+		<main className="flex flex-col items-center justify-between min-h-screen ">
+			<Hero />
+			<PriceTable />
+			<Testimonials />
+			<Feature />
+			<FAQ />
+			<Contact />
+		</main>
+	);
+=======
   return (
     <main className='flex flex-col items-center justify-between min-h-screen '>
       <Hero />
@@ -25,4 +37,5 @@ export default function Home() {
       </div>
     </main>
   );
+>>>>>>> 26379d0f4ae362ecfdb37deed4eac46fa18c77b6
 }
