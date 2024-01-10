@@ -6,7 +6,7 @@ import attention from "@/../../public/assets/svg/247.svg";
 import excel from "@/../../public/assets/svg/excel.svg";
 import userexp from "@/../../public/assets/svg/userexp.svg";
 import shopper from "@/../../public/assets/svg/shopper.svg";
-import ButtonContactar from "@/app/Components/Buttons/ButtonContactar";
+import Button from "@/app/Components/Buttons/ButtonAssist";
 
 const Feature = () => {
 	return (
@@ -116,6 +116,10 @@ const Feature = () => {
 						Liberate de estar ofreciendo productos, deja que el chat lo haga.
 					</p>
 				</div>
+			</div>
+
+			<div className="flex flex-col items-center">
+				<Button />
 			</div>
 		</div>
 	);
