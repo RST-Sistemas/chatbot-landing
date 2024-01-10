@@ -13,11 +13,13 @@ export default function Home() {
   return (
     <main className='flex flex-col items-center justify-between min-h-screen '>
       <Hero />
-      <PriceTable />
-      <Testimonials />
-      <Feature />
-      <FAQ />
-      <Contact />
+      <div className='px-5 md:px-22 lg:px-44'>
+        <PriceTable />
+        <Testimonials />
+        <Feature />
+        <FAQ />
+        <Contact />
+      </div>
     </main>
   );
 }
