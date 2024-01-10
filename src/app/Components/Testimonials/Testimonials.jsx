@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Testimonials = () => {
   return (
-    <div className='flex flex-col items-center w-full h-full gap-10 px-5 md:px-20 lg:px-44'>
+    <div className='flex flex-col items-center w-full h-full gap-10 '>
       <h1 className='text-2xl font-bold text-accent w-[350px] lg:w-full text-center'>
         Testimonios de gente que ya ha consumido el servicio
       </h1>
