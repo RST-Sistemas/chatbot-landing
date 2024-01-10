@@ -17,7 +17,7 @@ const Testimonials = () => {
           className='hidden lg:inline'
         />
         <div className='flex flex-col items-center gap-5 pl-10 lg:items-start'>
-          <div className='flex items-center justify-center w-48 lg:ml-16 h-28 bg-slate-300'>
+          <div className='flex items-center justify-center w-48 lg:ml-24 h-28 bg-slate-300'>
             GOOGLE
           </div>
           <Testimonial />
