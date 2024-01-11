@@ -7,12 +7,12 @@ import Image from 'next/image'
 
 const Footer = () => {
 	return (
-	<footer className="bg-yellow-100">
+	<footer className="bg-secondary">
 		<div className="mx-auto w-full max-w-screen-xl">
 		<div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3">
 			<div>
-				<h2 className="mb-6 text-sm font-extrabold text-neutral-700 uppercase">Empresa</h2>
-				<ul className="text-neutral-700 font-medium">
+				<h2 className="mb-6 text-sm font-bold text-accent uppercase">Empresa</h2>
+				<ul className="text-accent">
 					<li className="mb-4">
 						<Link href="#" className=" hover:underline">Quienes somos</Link>
 					</li>
@@ -28,8 +28,8 @@ const Footer = () => {
 				</ul>
 			</div>
 			<div>
-				<h2 className="mb-6 text-sm font-extrabold text-neutral-700 uppercase">Centro de ayuda</h2>
-				<ul className="text-neutral-700 font-medium">
+				<h2 className="mb-6 text-sm font-bold text-accent uppercase">Centro de ayuda</h2>
+				<ul className="text-accent">
 					<li className="mb-4">
 						<Link href="#" className="hover:underline">Necesito una web</Link>
 					</li>
@@ -45,8 +45,8 @@ const Footer = () => {
 				</ul>
 			</div>
 			<div>
-				<h2 className="mb-6 text-sm font-extrabold text-neutral-700 uppercase">Legales</h2>
-				<ul className="text-neutral-700 font-medium">
+				<h2 className="mb-6 text-sm font-bold text-accent uppercase">Legales</h2>
+				<ul className="text-accent">
 					<li className="mb-4">
 						<Link href="#" className="hover:underline">Política de privacidad</Link>
 					</li>
@@ -60,17 +60,17 @@ const Footer = () => {
 			</div>
 		</div>
 		<hr className="my-6 border-gray-300 sm:mx-auto lg:my-8" />
-		<div className="px-4 py-6  md:flex md:items-center md:justify-between">
-		<div className="flex justify-center">
-			<Image src={robot} alt="robot"/>
-			<h1>RST-Assist</h1>
+		<div className="px-4 py-6  md:flex md:items-center md:justify-center">
+			<div className="flex justify-center ">
+				<Image src={robot}  width={100} height={100} alt="robot"/>
+				<h1 className="mt-6">RST-Assist</h1>
+			</div>
 		</div>
-		</div>
-			<span className="block text-sm text-neutral-700 sm:text-center ">© 2015 - 2024 
-			<Link href="#" className="hover:underline">RST Argentina</Link>. All Rights Reserved.
+			<span className="block text-sm text-accent sm:text-center">© 2015 - 2024  
+			<Link href="#" className="hover:underline"> RST Argentina</Link>. All Rights Reserved.
 			</span>
 		</div>
-			<div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+			<div className="flex mt-6 sm:justify-center md:mt-4 space-x-5 rtl:space-x-reverse">
 				<Link href="#" className="text-gray-400 hover:text-gray-900">
 					<svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
 							<path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
