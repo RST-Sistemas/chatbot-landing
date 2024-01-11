@@ -5,6 +5,7 @@ import {
   FAQ,
   Feature,
   Hero,
+  Navbar,
   PriceTable,
   Testimonials,
 } from "@/app/Components";
@@ -15,13 +16,14 @@ export default function Home() {
     <main className='flex flex-col items-center justify-between scroll-smooth focus:scroll-auto'>
       <Hero />
       <div>
-        <div className='px-10 md:px-22 lg:px-44'>
+        <Navbar />
+        <div id='feature' className='px-10 md:px-22 lg:px-44'>
           <Feature />
-          <hr className='my-10' />
+          <hr id='price-table' className='my-10' />
           <PriceTable />
-          <hr className='my-10' />
+          <hr id='testimonials' className='my-10' />
           <Testimonials />
-          <hr className='my-10' />
+          <hr id='faq' className='my-10' />
           <FAQ />
           <Contact />
         </div>
