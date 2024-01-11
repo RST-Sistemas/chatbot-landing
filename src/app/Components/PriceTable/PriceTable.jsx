@@ -62,11 +62,11 @@ const listItems = {
 			bold: "",
 		},
 		{
-			text: "Asistencia Personalizada:",
-			bold: "todo el mes",
+			text: "Asistencia ",
+			bold: "Personalizada",
 		},
 		{
-			text: "Asesoramiento en difusiones",
+			text: "Asesoramiento en",
 			bold: "Marketing",
 		},
 		{
@@ -106,12 +106,13 @@ const PriceTable = () => {
 						</div>
 
 						<Items listItems={listItems.inicial} />
-
-						<Link
-							href="#"
-							className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">
-							<ButtonContactar />
-						</Link>
+						<div className="flex justify-center">
+							<Link
+								href="#contact"
+								className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900 mt-5">
+								<ButtonContactar className="flex flex-col justify-center" />
+							</Link>
+						</div>
 					</div>
 
 					<div className="flex flex-col max-w-lg p-6 mx-auto text-center bg-white border border-gray-100 rounded-lg shadow text-accent dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
@@ -127,13 +128,14 @@ const PriceTable = () => {
 							</span>
 							<span className="text-accent dark:text-gray-400">/mes</span>
 						</div>
-
 						<Items listItems={listItems.premium} />
-						<Link
-							href="#"
-							className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">
-							<ButtonContactar />
-						</Link>
+						<div className="flex justify-center ">
+							<Link
+								href="#contact"
+								className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900 mt-5">
+								<ButtonContactar />
+							</Link>
+						</div>
 					</div>
 
 					<div className="flex flex-col max-w-lg p-6 mx-auto text-center bg-white border border-gray-100 rounded-lg shadow text-accent dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
@@ -151,11 +153,14 @@ const PriceTable = () => {
 						</div>
 
 						<Items listItems={listItems.enterprise} />
-						<Link
-							href="#"
-							className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">
-							<ButtonContactar />
-						</Link>
+
+						<div className="flex justify-center">
+							<Link
+								href="#contact"
+								className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900 mt-11">
+								<ButtonContactar />
+							</Link>
+						</div>
 					</div>
 				</div>
 			</div>
