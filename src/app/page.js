@@ -16,11 +16,11 @@ export default function Home() {
       <Hero />
       <div>
         <div className='px-10 md:px-22 lg:px-44'>
+          <Feature />
+          <hr className='my-10' />
           <PriceTable />
           <hr className='my-10' />
           <Testimonials />
-          <hr className='my-10' />
-          <Feature />
           <hr className='my-10' />
           <FAQ />
           <Contact />
