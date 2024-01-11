@@ -1,7 +1,7 @@
 /** @format */
 
 import Testimonial from "./components/Testimonial";
-import RobotTestimonial from "@/../../public/assets/image/robot-testimonial.svg";
+import { RobotTestimonial } from "@/assets/image";
 import Image from "next/image";
 
 const Testimonials = () => {

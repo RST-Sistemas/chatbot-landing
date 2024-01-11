@@ -1,7 +1,7 @@
 /** @format */
 
 import { HiArrowRight } from "react-icons/hi2";
-import Robot from "@/../../public/assets/image/robot-hero.svg";
+import { RobotHero } from "@/assets/image";
 import Image from "next/image";
 
 const Hero = () => {
@@ -21,7 +21,7 @@ const Hero = () => {
       </div>
       <div>
         <Image
-          src={Robot}
+          src={RobotHero}
           alt='robot charter'
           className='lg:w-[450px] lg:object-cover '
         />

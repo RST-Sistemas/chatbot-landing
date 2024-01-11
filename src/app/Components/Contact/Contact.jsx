@@ -3,7 +3,7 @@
 import TyC from "./components/TyC";
 import Input from "./components/Input";
 import Image from "next/image";
-import RobotContact from "../../../../public/assets/image/robot-contact.svg";
+import { RobotContact } from "@/assets/image";
 
 const Contact = () => {
   return (

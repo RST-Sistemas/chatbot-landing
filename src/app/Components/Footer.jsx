@@ -1,13 +1,16 @@
 /** @format */
 
 import React from "react";
-import robot from "./../../assets/svg/robot.svg";
+import { Robot } from "@/assets/image";
 import Link from "next/link";
 import Image from "next/image";
-import li from "./../../../public/assets/svg/li.svg";
-import ig from "./../../../public/assets/svg/ig.svg";
-import fb from "./../../../public/assets/svg/fb.svg";
-import wpp from "./../../../public/assets/svg/wpp.svg";
+
+import {
+  LinkedInIcon,
+  InstagramIcon,
+  FacebookIcon,
+  WhatsappIcon,
+} from "@/assets/svg";
 
 const Footer = () => {
   return (
@@ -93,7 +96,7 @@ const Footer = () => {
         </div>
         <hr className='my-5 border-accent opacity-15 ' />
         <div className='flex items-center justify-center gap-5'>
-          <Image src={robot} width={49} height={54} alt='robot' />
+          <Image src={Robot} width={49} height={54} alt='robot' />
           <h1 className='text-2xl'> DanielBot</h1>
         </div>
         <span className='block text-center text-accent'>
@@ -108,7 +111,7 @@ const Footer = () => {
       <div className='flex pb-2 mt-6 space-x-5 sm:justify-center md:mt-4 rtl:space-x-reverse'>
         <Link href='#'>
           <Image
-            src={fb}
+            src={FacebookIcon}
             alt='logo fb'
             className='w-[22px] h-[22px] text-gray-400 hover:text-gray-900 dark:hover:text-white'
           />
@@ -116,7 +119,7 @@ const Footer = () => {
         </Link>
         <Link href='#'>
           <Image
-            src={ig}
+            src={InstagramIcon}
             alt='logo ig'
             className='w-[22px] h-[22px] text-gray-400 hover:text-gray-900 dark:hover:text-white'
           />
@@ -124,7 +127,7 @@ const Footer = () => {
         </Link>
         <Link href='#'>
           <Image
-            src={wpp}
+            src={WhatsappIcon}
             alt='logo wpp'
             className='w-[22px] h-[22px] text-gray-400 hover:text-gray-900 dark:hover:text-white'
           />
@@ -132,7 +135,7 @@ const Footer = () => {
         </Link>
         <Link href='#'>
           <Image
-            src={li}
+            src={LinkedInIcon}
             alt='logo li'
             className='w-[22px] h-[22px] text-gray-400 hover:text-gray-900 dark:hover:text-white'
           />

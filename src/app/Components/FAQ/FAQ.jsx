@@ -1,7 +1,7 @@
 /** @format */
 
 import Collapse from "./components/Collapse";
-import RobotFAQ from "../../../../public/assets/image/robot-faq.svg";
+import { RobotFAQ } from "@/assets/image";
 import Image from "next/image";
 
 const FAQ = () => {

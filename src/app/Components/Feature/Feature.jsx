@@ -1,11 +1,14 @@
 /** @format */
 import Image from "next/image";
-import money from "@/../../public/assets/svg/money.svg";
-import chat from "@/../../public/assets/svg/chat.svg";
-import attention from "@/../../public/assets/svg/attention.svg";
-import excel from "@/../../public/assets/svg/excel.svg";
-import userexp from "@/../../public/assets/svg/userexp.svg";
-import shopper from "@/../../public/assets/svg/shopper.svg";
+import {
+  Attention,
+  Chat,
+  Check,
+  Excel,
+  Money,
+  Shopper,
+  UserExp,
+} from "@/assets/svg";
 import Button from "@/app/Components/Buttons/ButtonAssist";
 import Link from "next/link";
 
@@ -24,7 +27,7 @@ const Feature = () => {
         <div className=''>
           <div className='flex items-start justify-start mb-4 rounded-full w-13 h-13 bg-primary-197 lg:h-15 lg:w-15 dark:bg-primary-900'>
             <Image
-              src={money}
+              src={Money}
               width={197}
               height={197}
               alt='Picture of money'
@@ -41,7 +44,7 @@ const Feature = () => {
         <div>
           <div className='flex items-center justify-center mb-4 rounded-full w-13 h-13 bg-primary-197 lg:h-15 lg:w-15 dark:bg-primary-900'>
             <Image
-              src={attention}
+              src={Attention}
               width={197}
               height={197}
               alt='Picture of money'
@@ -58,7 +61,7 @@ const Feature = () => {
         <div>
           <div className='flex flex-col items-end justify-end mb-4 rounded-full w-13 h-13 bg-primary-197 lg:h-15 lg:w-15 dark:bg-primary-900'>
             <Image
-              src={excel}
+              src={Excel}
               width={197}
               height={197}
               alt='Picture of money'
@@ -74,7 +77,7 @@ const Feature = () => {
         </div>
         <div>
           <div className='flex items-start justify-start mb-4 rounded-full w-13 h-13 bg-primary-197 lg:h-15 lg:w-15 dark:bg-primary-900'>
-            <Image src={chat} width={197} height={197} alt='Picture of money' />
+            <Image src={Chat} width={197} height={197} alt='Picture of money' />
           </div>
           <h3 className='mb-2 text-xl font-bold text-yellow-300 dark:text-white'>
             Conexiones Multitudinarias
@@ -87,7 +90,7 @@ const Feature = () => {
         <div>
           <div className='flex items-center justify-center mb-4 rounded-full w-13 h-13 bg-primary-197 lg:h-15 lg:w-15 dark:bg-primary-900'>
             <Image
-              src={userexp}
+              src={UserExp}
               width={197}
               height={197}
               alt='Picture of money'
@@ -104,7 +107,7 @@ const Feature = () => {
         <div>
           <div className='flex flex-col items-end justify-end mb-4 rounded-full w-13 h-13 bg-primary-197 lg:h-15 lg:w-15 dark:bg-primary-900'>
             <Image
-              src={shopper}
+              src={Shopper}
               width={197}
               height={197}
               alt='Picture of money'
