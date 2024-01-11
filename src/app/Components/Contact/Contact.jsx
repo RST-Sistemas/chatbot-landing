@@ -7,10 +7,7 @@ import { RobotContact } from "@/assets/image";
 
 const Contact = () => {
   return (
-    <div
-      className='flex flex-col items-center w-full h-full gap-5 p-5 mt-32 mb-10 border rounded-lg shadow bg-base-100 lg:px-24'
-      id='contact'
-    >
+    <div className='flex flex-col items-center w-full h-full gap-5 p-5 mt-32 mb-10 border rounded-lg shadow bg-base-100 lg:px-24'>
       <h1 className='text-2xl font-bold text-accent'>CONTACTANOS</h1>
       <div className='w-full'>
         <div className='flex flex-wrap justify-between '>
