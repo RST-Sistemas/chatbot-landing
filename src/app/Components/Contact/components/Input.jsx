@@ -1,6 +1,6 @@
 const Input = ({ label, placeholder }) => {
   return (
-    <label className='w-full md:max-w-[300px] lg:max-w-[400px] form-control'>
+    <label className='w-full form-control'>
       <div className='label'>
         <span className='label-text text-accent'>{label}</span>
       </div>
