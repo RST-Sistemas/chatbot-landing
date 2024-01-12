@@ -3,6 +3,7 @@
 import Testimonial from "./components/Testimonial";
 import { RobotTestimonial } from "@/assets/image";
 import Image from "next/image";
+import Google from "./components/Google";
 
 const Testimonials = () => {
   return (
@@ -17,9 +18,7 @@ const Testimonials = () => {
           className='hidden lg:inline'
         />
         <div className='flex flex-col items-center gap-5 lg:items-start'>
-          <div className='flex items-center justify-center w-48 lg:ml-24 h-28 bg-slate-300'>
-            GOOGLE
-          </div>
+          <Google />
           <Testimonial />
         </div>
       </div>
