@@ -13,7 +13,7 @@ import WhatsAppSticky from "./Components/WhatsAppSticky";
 
 export default function Home() {
   return (
-    <main className='flex flex-col items-center justify-between scroll-smooth focus:scroll-auto'>
+    <main className='flex flex-col items-center justify-between overflow-x-clip scroll-smooth focus:scroll-auto'>
       <Hero />
       <div>
         <Navbar />
