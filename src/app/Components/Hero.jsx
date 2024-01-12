@@ -2,8 +2,9 @@
 
 import { HiArrowRight } from "react-icons/hi2";
 import { RobotHero } from "@/assets/image";
+
 import Image from "next/image";
-import Link from 'next/link'
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -15,20 +16,18 @@ const Hero = () => {
         <h3 className='text-accent w-[299px] lg:text-2xl'>
           Automatiza y mejora las ventas en WhatsApp
         </h3>
-        <Link href={'#price-table'}>
-        <button className='w-full max-w-[254px] flex-row flex items-center  text-white shadow-md btn btn-primary'>
-          Empezar ya
-          <HiArrowRight className='w-4 h-4' />
-        </button>
+        <Link href={"#price-table"}>
+          <button className='w-full max-w-[254px] flex-row flex items-center  text-white shadow-md btn btn-primary'>
+            Empezar ya
+            <HiArrowRight className='w-4 h-4' />
+          </button>
         </Link>
       </div>
-      <div>
-        <Image
-          src={RobotHero}
-          alt='robot charter'
-          className='lg:w-[450px] lg:object-cover '
-        />
-      </div>
+      <Image
+        src={RobotHero}
+        alt='DanielBot, a robot charter'
+        className='object-cover lg:h-[630px]'
+      />
     </div>
   );
 };
