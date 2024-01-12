@@ -17,7 +17,7 @@ const Testimonial = () => {
           onClick={() => {
             testimonialIndex > 0 && setTestimonialIndex(testimonialIndex - 1);
           }}
-          className='p-0 pr-4 sm:px-4 btn btn-ghost hover:opacity-80 hover:scale-110'
+          className='p-0 pr-4 sm:px-4 btn btn-ghost hover:opacity-80 hover:scale-110 hover:bg-transparent'
         >
           <Image
             width={9}
@@ -34,7 +34,7 @@ const Testimonial = () => {
           onClick={() => {
             testimonialIndex < 2 && setTestimonialIndex(testimonialIndex + 1);
           }}
-          className='p-0 pl-4 sm:px-4 btn btn-ghost hover:opacity-80 hover:scale-110'
+          className='p-0 pl-4 sm:px-4 btn btn-ghost hover:opacity-80 hover:scale-110 hover:bg-transparent'
         >
           <Image
             width={9}
