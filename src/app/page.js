@@ -12,6 +12,7 @@ import {
 import WhatsAppSticky from "./Components/WhatsAppSticky";
 
 export default function Home() {
+<<<<<<< HEAD
 	return (
 		<main className="flex flex-col items-center justify-between scroll-smooth focus:scroll-auto">
 			<div>
@@ -31,4 +32,25 @@ export default function Home() {
 			</div>
 		</main>
 	);
+=======
+  return (
+    <main className='flex flex-col items-center justify-between overflow-x-clip scroll-smooth focus:scroll-auto'>
+      <Hero />
+      <div>
+        <Navbar />
+        <div id='feature' className='px-10 md:px-22 lg:px-44'>
+          <Feature />
+          <hr id='price-table' className='my-10' />
+          <PriceTable />
+          <hr id='testimonials' className='my-10' />
+          <Testimonials />
+          <hr id='faq' className='my-10' />
+          <FAQ />
+          <Contact />
+        </div>
+        <WhatsAppSticky />
+      </div>
+    </main>
+  );
+>>>>>>> 9e720ac55c7b2e0a61c217cbfadfe2af653564b8
 }
