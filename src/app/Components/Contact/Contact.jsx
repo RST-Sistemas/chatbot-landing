@@ -7,14 +7,14 @@ import { RobotContact } from "@/assets/image";
 
 const Contact = () => {
   return (
-    <div
+    <section
       id='contact'
       className='flex flex-col items-center h-full gap-5 p-5 mx-5 mt-32 mb-10 border rounded-lg shadow bg-base-100 lg:px-24'
     >
       <h1 className='text-2xl font-bold text-accent'>CONTACTANOS</h1>
 
-      <div>
-        <div className=''>
+      <form>
+        <div>
           <div className='grid grid-cols-1 md:grid-cols-[1fr_1fr] w- md:gap-5'>
             <Input label={"Nombre completo"} placeholder={"Bonnie Green"} />
             <Input label={"Email"} placeholder={"bonniegreen@gmail.com"} />
@@ -40,13 +40,13 @@ const Contact = () => {
         <button className='flex flex-row items-center w-full text-white shadow-md btn btn-primary'>
           Contactar
         </button>
-      </div>
+      </form>
       <Image
         src={RobotContact}
         alt='robot-contact'
         className='absolute hidden mt-32 left-14 lg:inline'
       />
-    </div>
+    </section>
   );
 };
 
