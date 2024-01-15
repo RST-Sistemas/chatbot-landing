@@ -23,7 +23,7 @@ const Feature = () => {
 				</h2>
 			</div>
 
-			<div className="px-10 mx-10 space-y-4 md:grid md:space-y-10 md:space-x-10 md:grid-cols-2 lg:grid-cols-3 md:gap-20 md:space-y-0">
+			<div className="px-10 mx-10 space-y-4 md:grid md:space-y-10 md:space-x-10 md:grid-cols-2 lg:grid-cols-3 md:gap-20">
 				<div className="md:mt-10 md:ml-16">
 					<div className="flex items-start justify-start mb-4 rounded-full w-13 h-13 bg-primary-197 lg:h-15 lg:w-15 dark:bg-primary-900 ">
 						<Image
