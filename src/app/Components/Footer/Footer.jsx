@@ -109,7 +109,7 @@ const Footer = () => {
 				</span>
 			</div>
 			<div className="flex pb-2 mt-6 space-x-5 sm:justify-center md:mt-4 rtl:space-x-reverse">
-				<Link href="https://www.facebook.com/rstargentina">
+				<Link href="https://www.facebook.com/rstargentina" target="_blank">
 					<Image
 						src={FacebookIcon}
 						alt="logo fb"
@@ -117,7 +117,7 @@ const Footer = () => {
 					/>
 					<span className="sr-only">Facebook page</span>
 				</Link>
-				<Link href="https://www.instagram.com/rstargentina/">
+				<Link href="https://www.instagram.com/rstargentina/" target="_blank">
 					<Image
 						src={InstagramIcon}
 						alt="logo ig"
@@ -125,7 +125,7 @@ const Footer = () => {
 					/>
 					<span className="sr-only">Instagram page</span>
 				</Link>
-				<Link href="https://wa.me/2615086780">
+				<Link href="https://wa.me/2615086780" target="_blank">
 					<Image
 						src={WhatsappIcon}
 						alt="logo wpp"
@@ -133,7 +133,7 @@ const Footer = () => {
 					/>
 					<span className="sr-only">Whatsapp</span>
 				</Link>
-				<Link href="www.linkedin.com/in/rstargentina">
+				<Link href="www.linkedin.com/in/rstargentina" target="_blank">
 					<Image
 						src={LinkedInIcon}
 						alt="logo li"
