@@ -133,7 +133,7 @@ const Footer = () => {
 					/>
 					<span className="sr-only">Whatsapp</span>
 				</Link>
-				<Link href="www.linkedin.com/in/rstargentina" target="_blank">
+				<Link href="https://www.linkedin.com/in/rstargentina" target="_blank">
 					<Image
 						src={LinkedInIcon}
 						alt="logo li"
