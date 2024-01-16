@@ -95,11 +95,11 @@ const Footer = () => {
 					</div>
 				</div>
 				<hr className="my-5 border-accent opacity-15 " />
-				<div className="flex items-center justify-center gap-5">
+				<div className="flex items-center justify-center gap-5 mx-4">
 					<Image src={Robot} width={49} height={54} alt="robot" />
 					<h1 className="text-2xl"> DanielBot</h1>
 				</div>
-				<span className="block text-center text-accent">
+				<span className="block mx-4 text-center text-accent">
 					© 2015 - 2024
 					<Link href="#" className="hover:underline">
 						{" "}
@@ -108,12 +108,13 @@ const Footer = () => {
 					. All Rights Reserved.
 				</span>
 			</div>
-			<div className="flex items-center pb-2 mt-6 space-x-5 sm:justify-center md:mt-4 rtl:space-x-reverse">
+
+			<div className="flex items-center justify-center pb-2 mt-6 space-x-5 md:mt-4 rtl:space-x-reverse">
 				<Link href="https://www.facebook.com/rstargentina" target="_blank">
 					<Image
 						src={FacebookIcon}
 						alt="logo fb"
-						className="w-[22px] h-[22px] text-gray-400 hover:text-gray-900 dark:hover:text-white"
+						className="w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2"
 					/>
 					<span className="sr-only">Facebook page</span>
 				</Link>
@@ -121,7 +122,7 @@ const Footer = () => {
 					<Image
 						src={InstagramIcon}
 						alt="logo ig"
-						className="w-[22px] h-[22px] text-gray-400 hover:text-gray-900 dark:hover:text-white"
+						className="w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2"
 					/>
 					<span className="sr-only">Instagram page</span>
 				</Link>
@@ -129,7 +130,7 @@ const Footer = () => {
 					<Image
 						src={WhatsappIcon}
 						alt="logo wpp"
-						className="w-[22px] h-[22px] text-gray-400 hover:text-gray-900 dark:hover:text-white"
+						className="w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2"
 					/>
 					<span className="sr-only">Whatsapp</span>
 				</Link>
@@ -137,7 +138,7 @@ const Footer = () => {
 					<Image
 						src={LinkedInIcon}
 						alt="logo li"
-						className="w-[22px] h-[22px] text-gray-400 hover:text-gray-900 dark:hover:text-white"
+						className="w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2"
 					/>
 					<span className="sr-only">Linkedin page</span>
 				</Link>

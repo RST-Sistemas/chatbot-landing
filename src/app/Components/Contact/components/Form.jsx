@@ -47,6 +47,7 @@ export default function Form() {
 						name="name"
 						id="name"
 						onChange={handleParam()}
+						required
 					/>
 					<Input
 						label={"Email"}
@@ -55,6 +56,7 @@ export default function Form() {
 						name="email"
 						id="email"
 						onChange={handleParam()}
+						required
 					/>
 				</div>
 				<div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] md:gap-5 ">
@@ -65,6 +67,7 @@ export default function Form() {
 						name="empresa"
 						id="empresa"
 						onChange={handleParam()}
+						required
 					/>
 					<Input
 						label={"Rubro empresa"}
@@ -73,6 +76,7 @@ export default function Form() {
 						name="rubro"
 						id="rubro"
 						onChange={handleParam()}
+						required
 					/>
 				</div>
 				<div>
@@ -85,7 +89,8 @@ export default function Form() {
 							value={query.message}
 							name="message"
 							id="message"
-							onChange={handleParam()}></textarea>
+							onChange={handleParam()}
+							required></textarea>
 					</label>
 				</div>
 			</div>
