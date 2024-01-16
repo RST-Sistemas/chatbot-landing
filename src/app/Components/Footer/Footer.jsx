@@ -108,7 +108,7 @@ const Footer = () => {
 					. All Rights Reserved.
 				</span>
 			</div>
-			<div className="flex pb-2 mt-6 space-x-5 sm:justify-center md:mt-4 rtl:space-x-reverse">
+			<div className="flex flex-col items-center pb-2 mt-6 space-x-5 sm:justify-center md:mt-4 rtl:space-x-reverse">
 				<Link href="https://www.facebook.com/rstargentina" target="_blank">
 					<Image
 						src={FacebookIcon}
