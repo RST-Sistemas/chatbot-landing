@@ -90,16 +90,17 @@ const PriceTable = () => {
 						impulsar el crecimiento económico.
 					</p>
 				</div>
-				<div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+				<div className="space-y-10 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0 md:gap-4 ">
 					<div className="flex flex-col max-w-lg p-6 mx-auto text-center bg-white border border-gray-100 rounded-lg shadow text-accent dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
 						<h3 className="mb-4 text-2xl font-semibold text-yellow-300">
 							Inicial
 						</h3>
 						<p className="font-light text-accent sm:text-lg dark:text-gray-400">
-							La mejor opcion para emprendedores.
+							La mejor opcion para emprendedores que quieran empezar con su
+							propio negocio.{" "}
 						</p>
-						<div className="flex items-baseline justify-center my-8">
-							<span className="mr-2 text-5xl font-extrabold text-accent">
+						<div className="flex items-baseline justify-center my-4 mr-6 md:my-20">
+							<span className="mr-2 text-5xl font-extrabold text-accent md:text-2xl">
 								$120.000
 							</span>
 							<span className="text-accent dark:text-gray-400">Unico</span>
@@ -115,15 +116,18 @@ const PriceTable = () => {
 						</div>
 					</div>
 
-					<div className="flex flex-col max-w-lg p-6 mx-auto text-center bg-white border border-gray-100 rounded-lg shadow text-accent dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+					<div className="flex flex-col max-w-lg p-6 mx-auto text-center bg-white border border-gray-100 rounded-lg shadow text-accent dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white lg:space-x-4">
 						<h3 className="mb-4 text-2xl font-semibold text-yellow-400">
 							Premiun
 						</h3>
 						<p className="font-light text-accent sm:text-lg dark:text-gray-400">
 							Ideal para PyMEs con un foco medio de comunicacion
+							<br />
+							<br />
 						</p>
-						<div className="flex items-baseline justify-center my-8">
-							<span className="mr-2 text-5xl font-extrabold text-accent">
+
+						<div className="flex items-baseline justify-center my-8 md:p-10 md:mx-10 md:mr-6">
+							<span className="mr-2 text-5xl font-extrabold text-accent md:text-2xl">
 								$185.000
 							</span>
 							<span className="text-accent dark:text-gray-400">/mes</span>
@@ -132,7 +136,7 @@ const PriceTable = () => {
 						<div className="flex justify-center ">
 							<Link
 								href="#contact"
-								className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900 mt-5">
+								className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900 ">
 								<ButtonContactar />
 							</Link>
 						</div>
@@ -145,11 +149,14 @@ const PriceTable = () => {
 						<p className="font-light text-accent sm:text-lg dark:text-gray-400">
 							Ideal para empresas de alto transito comunicacional.
 						</p>
-						<div className="flex items-baseline justify-center my-8">
-							<span className="mr-2 text-5xl font-extrabold text-accent">
+						<div className="flex items-baseline justify-center my-8 md:p-10 md:mx-10 md:mr-6">
+							<span className="mr-2 text-5xl font-extrabold text-accent md:text-2xl">
 								$300.000
 							</span>
-							<span className="text-accent dark:text-gray-400">/mes</span>
+
+							<span className="text-accent dark:text-gray-400 md:text-sm md:mr-4">
+								/mes
+							</span>
 						</div>
 
 						<Items listItems={listItems.enterprise} />

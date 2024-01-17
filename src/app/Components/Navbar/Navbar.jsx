@@ -9,7 +9,7 @@ import { Bars } from "@/assets/svg";
 const Navbar = () => {
 	return (
 		<nav className="sticky top-0 z-20 px-5 border-gray-200 shadow bg-gray-50 md:px-24 lg:px-44 ">
-			<div className="flex flex-wrap items-center justify-between max-w-screen-xl py-4 ">
+			<div className="flex flex-wrap items-center justify-between max-w-screen-xl py-4">
 				<Link href="#" className="flex items-center">
 					<Image src={Robot} width={49} height={55} alt="Robot" />
 				</Link>

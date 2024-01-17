@@ -15,13 +15,13 @@ import {
 const Footer = () => {
 	return (
 		<footer className="bg-secondary">
-			<div className="w-full max-w-screen-xl px-5 pt-10 mx-auto md:px-24 lg:px-44">
-				<div className="flex flex-wrap justify-between">
+			<div className="w-full max-w-screen-xl px-5 pt-10 mx-auto md:px-24 lg:px-44 ">
+				<div className="flex flex-wrap justify-between ">
 					<div>
-						<h2 className="mb-6 text-sm font-bold uppercase text-accent">
+						<h2 className="my-6 text-sm font-bold uppercase text-accent">
 							Empresa
 						</h2>
-						<ul className="text-accent">
+						<ul className="text-accent ">
 							<li className="mb-4">
 								<Link href="#" className=" hover:underline">
 									Quienes somos
@@ -45,7 +45,7 @@ const Footer = () => {
 						</ul>
 					</div>
 					<div>
-						<h2 className="mb-6 text-sm font-bold uppercase text-accent">
+						<h2 className="my-6 text-sm font-bold uppercase text-accent">
 							Centro de ayuda
 						</h2>
 						<ul className="text-accent">
@@ -72,7 +72,7 @@ const Footer = () => {
 						</ul>
 					</div>
 					<div>
-						<h2 className="mb-6 text-sm font-bold uppercase text-accent">
+						<h2 className="my-6 text-sm font-bold uppercase text-accent">
 							Legales
 						</h2>
 						<ul className="text-accent">
@@ -114,7 +114,7 @@ const Footer = () => {
 					<Image
 						src={FacebookIcon}
 						alt="logo fb"
-						className="w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2"
+						className="w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2 animate-bounce"
 					/>
 					<span className="sr-only">Facebook page</span>
 				</Link>
@@ -122,7 +122,7 @@ const Footer = () => {
 					<Image
 						src={InstagramIcon}
 						alt="logo ig"
-						className="w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2"
+						className="w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2 animate-bounce"
 					/>
 					<span className="sr-only">Instagram page</span>
 				</Link>
@@ -130,7 +130,7 @@ const Footer = () => {
 					<Image
 						src={WhatsappIcon}
 						alt="logo wpp"
-						className="w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2"
+						className="w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2 animate-bounce"
 					/>
 					<span className="sr-only">Whatsapp</span>
 				</Link>
@@ -138,7 +138,7 @@ const Footer = () => {
 					<Image
 						src={LinkedInIcon}
 						alt="logo li"
-						className="w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2"
+						className="w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2 animate-bounce"
 					/>
 					<span className="sr-only">Linkedin page</span>
 				</Link>
