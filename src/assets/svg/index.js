@@ -17,3 +17,6 @@ export { default as Bars } from "./bars.svg";
 
 export { default as ArrowTestimonialLeft } from "./ArrowTestimonialLeft.svg";
 export { default as ArrowTestimonialRight } from "./ArrowTestimonialRight.svg";
+
+export { default as GoogleSVG } from "./google.svg";
+export { default as StarSVG } from "./star.svg";

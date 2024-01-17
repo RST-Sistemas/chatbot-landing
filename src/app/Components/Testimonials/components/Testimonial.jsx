@@ -4,7 +4,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Guy, GirlBlack, GirlWhite } from "@/assets/image";
-import { ArrowTestimonialLeft, ArrowTestimonialRight } from "@/assets/svg";
+import {
+  ArrowTestimonialLeft,
+  ArrowTestimonialRight,
+  StarSVG,
+} from "@/assets/svg";
 import { useState } from "react";
 
 const Testimonial = () => {
@@ -47,12 +51,19 @@ const Testimonial = () => {
       </div>
       <p className='flex items-center gap-2 text-base text-accent'>
         <Image
-          className='w-9 h-9'
+          width={36}
+          height={36}
           src={testimonialList[testimonialIndex].icon}
           alt='guy'
         />
         {testimonialList[testimonialIndex].name} |{" "}
-        {testimonialList[testimonialIndex].title}
+        <div className='flex gap-1'>
+          <Image width={22} height={20} src={StarSVG} alt='Star SVG' />
+          <Image width={22} height={20} src={StarSVG} alt='Star SVG' />
+          <Image width={22} height={20} src={StarSVG} alt='Star SVG' />
+          <Image width={22} height={20} src={StarSVG} alt='Star SVG' />
+          <Image width={22} height={20} src={StarSVG} alt='Star SVG' />
+        </div>
       </p>
     </div>
   );
@@ -60,22 +71,19 @@ const Testimonial = () => {
 
 const testimonialList = [
   {
-    text: "El Chatbot me soluciono la vida, ya que antes estaba todo el dia respondiendo mensajes y no me permitia seguir haciendo crecer mi emprendimiento. Ahora puedo dedicarle mas tiempo a mi empresa y tengo mucho mas tiempo libre",
-    name: "Alejo Araya",
-    title: "Pasante de RST",
-    icon: Guy,
+    text: "Excelente servicio! Los llame en 3 minutos se comunicaron vía Whatsapp conmigo me dieron todas las indicaciones, todo súper dinámico me enviaron el test vía Whatsapp el mismo día, y no tuve ningún problema en cruzar a chile !",
+    name: "Luden Van Herzock",
+    icon: "https://lh3.googleusercontent.com/a-/ALV-UjVqcFdkhS4TtQwynuV2j3D_f5pn6rwdkAFbbFMKqtYLWY8=w75-h75-p-rp-mo-br100",
   },
   {
-    text: "El chatbot ha desempeñado un papel fundamental en su área de trabajo al simplificar procesos diarios. Gracias a su interfaz intuitiva y respuestas instantáneas, ha logrado mejorar significativamente la eficiencia en la gestión de recursos humanos. Desde la coordinación de entrevistas hasta la resolución de consultas de empleados, el chatbot ha permitido a esta profesional optimizar su tiempo y concentrarse en estrategias más estratégicas y enriquecedoras para el desarrollo del personal.",
-    name: "Emily Johnson",
-    title: "Gerente de Recursos Humanos",
-    icon: GirlWhite,
+    text: "Muy buena atención, muy clara y precisa. En todo momento me contestaron rápido, y fueron súper puntuales en el horario del turno. Muy conforme",
+    name: "Barbara Oña",
+    icon: "https://lh3.googleusercontent.com/a-/ALV-UjUURL4oJWCxBn6NjuJmvQNiRqkrwb62xt_DR8EYljU9NEU=w75-h75-p-rp-mo-br100",
   },
   {
-    text: "El chatbot ha sido una herramienta esencial para la resolución de problemas técnicos. Su capacidad para proporcionar respuestas rápidas y asistencia instantánea ha liberado tiempo valioso. Al facilitar la comunicación con el equipo y mejorar la eficiencia en la implementación de nuevas funcionalidades, el chatbot ha permitido a esta ingeniera de software dedicarse a tareas más complejas y desafiantes en su área de trabajo. Ambas profesionales han experimentado beneficios significativos gracias a la integración del chatbot en sus respectivas funciones laborales.",
+    text: "Me atendieron muy rápido y de modo muy profesional. El chico que me respondió por teléfono muy correcto y predispuesto. Las chicas que atienden en el laboratorio muy simpáticas, atentas y profesionales. Da gusto ir al lugar.",
     name: "Aisha Williams",
-    title: "Ingeniera de Software",
-    icon: GirlBlack,
+    icon: "https://lh3.googleusercontent.com/a-/ALV-UjXqYCi5R204bE-bZ-deWXgFkHrCVkYllWmdW-k5AitoxA=w75-h75-p-rp-mo-br100",
   },
 ];
 
