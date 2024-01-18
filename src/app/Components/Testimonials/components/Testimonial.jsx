@@ -31,7 +31,7 @@ const Testimonial = () => {
             className=' w-[10px] h-[18px]'
           />
         </button>
-        <p className='text-lg text-justify transition-all ease-out text-accent'>
+        <p className='text-lg transition-all ease-out text-accent'>
           {testimonialList[testimonialIndex].text}
         </p>
         <button

@@ -17,7 +17,7 @@ export default function Home() {
       <div>
         <Navbar />
         <Hero />
-        <div id='feature' className='px-10 md:px-22 lg:px-44'>
+        <div className='px-10 md:px-22 lg:px-44'>
           <Feature />
           <hr id='price-table' className='my-10' />
           <PriceTable />
