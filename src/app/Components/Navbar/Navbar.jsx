@@ -12,7 +12,7 @@ const Navbar = () => {
       <input id='my-drawer-3' type='checkbox' className='drawer-toggle' />
       <div className='flex flex-col drawer-content'>
         {/* Navbar */}
-        <div className='w-full navbar bg-gray-50 md:px-24 lg:px-44'>
+        <div className='w-full navbar bg-gray-50 md:px-24 lg:px-44 '>
           <Link href='#' className='flex items-center flex-1'>
             <Image
               src={Robot}
@@ -31,11 +31,11 @@ const Navbar = () => {
               <Image src={Bars} className='w-5 h-5' alt='bars' />
             </label>
           </div>
-          <div className='flex-none hidden lg:block'>
+          <div className='flex-none hidden lg:block '>
             <ul className='items-center gap-5 menu menu-horizontal'>
               <li>
                 <Link
-                  className='[&>div]:hover:bg-primary text-base  block px-3 py-2 rounded text-accent md:p-0  md:hover:bg-transparent md:border-0'
+                  className='[&>div]:hover:bg-primary text-base  block px-3 py-2   text-accent md:p-0  md:hover:bg-transparent md:border-0'
                   href='#feature'
                 >
                   Caracteristicas
@@ -80,7 +80,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className='drawer-side'>
+      <div className='overflow-x-hidden drawer-side'>
         <label
           htmlFor='my-drawer-3'
           aria-label='close sidebar'
