@@ -12,8 +12,8 @@ const Navbar = () => {
       <input id='my-drawer-3' type='checkbox' className='drawer-toggle' />
       <div className='flex flex-col drawer-content'>
         {/* Navbar */}
-        <div className='w-full navbar bg-gray-50 md:px-24 lg:px-44 '>
-          <Link href='#' className='flex items-center flex-1'>
+        <div className='justify-between w-full navbar bg-gray-50 md:px-24 lg:px-44 '>
+          <Link href='#' className='flex items-center '>
             <Image
               src={Robot}
               width={49}
