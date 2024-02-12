@@ -114,7 +114,7 @@ const Footer = () => {
 					<Image
 						src={FacebookIcon}
 						alt="logo fb"
-						className="w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2 animate-bounce"
+						className="w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2 hover:animate-bounce"
 					/>
 					<span className="sr-only">Facebook page</span>
 				</Link>
@@ -122,7 +122,7 @@ const Footer = () => {
 					<Image
 						src={InstagramIcon}
 						alt="logo ig"
-						className="w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2 animate-bounce"
+						className="w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2 hover:animate-bounce"
 					/>
 					<span className="sr-only">Instagram page</span>
 				</Link>
@@ -130,7 +130,7 @@ const Footer = () => {
 					<Image
 						src={WhatsappIcon}
 						alt="logo wpp"
-						className="w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2 animate-bounce"
+						className="w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2  hover:animate-bounce"
 					/>
 					<span className="sr-only">Whatsapp</span>
 				</Link>
@@ -138,7 +138,7 @@ const Footer = () => {
 					<Image
 						src={LinkedInIcon}
 						alt="logo li"
-						className="w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2 animate-bounce"
+						className="w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2 hover:animate-bounce"
 					/>
 					<span className="sr-only">Linkedin page</span>
 				</Link>
