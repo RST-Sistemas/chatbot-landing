@@ -103,7 +103,7 @@ const PriceTable = () => {
             <Package
               title='Gratis'
               description='¡Mejora tu atención al cliente sin costo alguno! Obtén acceso gratuito a herramientas básicas para impulsar tu negocio.'
-              price='00 '
+              offer='00 '
               times={"/mes"}
               listItems={listItems.inicial}
               url='#contact'
@@ -112,8 +112,8 @@ const PriceTable = () => {
             <Package
               title='Emprendedores'
               description='Haz crecer tu empresa con nuestra solución diseñada para emprendedores. '
-              price='50.000 '
-              offer='89.000'
+              price='89.000 '
+              offer='50.000'
               times={"/mes"}
               listItems={listItems.emprendedores}
               url='#contact'
@@ -122,7 +122,8 @@ const PriceTable = () => {
             <Package
               title='PyMe'
               description='Optimiza la eficiencia de tu negocio con nuestra oferta especial para PyMes.'
-              price='89.000 '
+              offer='89.000 '
+              price='165.000'
               times={"/mes"}
               listItems={listItems.pyme}
               url='#contact'

@@ -13,17 +13,23 @@ const Package = ({
   url,
 }) => {
   return (
-    <div className='flex min-h-[846px] w-[349px] flex-col justify-between max-w-lg p-6 mx-auto text-center bg-white border border-gray-100 rounded-lg shadow text-accent '>
+    <div className='flex min-h-[846px] w-[349px] flex-col  max-w-lg p-6 mx-auto text-center bg-white border border-gray-100 rounded-lg shadow text-accent '>
       <div>
         <h3 className='mb-4 text-2xl font-semibold text-primary'>{title}</h3>
         <p className='text-base text-accent sm:text-lg dark:text-gray-400'>
           {description}
         </p>
-        <span className='text-3xl text-accent md:text-2xl'>{offer}</span>
-        <div className='flex items-baseline justify-center gap-2 my-4 mr-6 md:my-20'>
+
+        {price && (
+          <div className='flex items-center justify-center'>
+            <div className='absolute h-1 mt-1 bg-red-600 w-28'></div>
+            <p className='text-2xl '>${price}</p>
+          </div>
+        )}
+        <div className='flex items-baseline justify-center gap-2 '>
           <span className='text-base text-accent '>$</span>
           <span className='text-3xl font-bold text-accent md:text-2xl'>
-            {price}
+            {offer}
           </span>
           <span className='text-base text-accent '>{times}</span>
         </div>

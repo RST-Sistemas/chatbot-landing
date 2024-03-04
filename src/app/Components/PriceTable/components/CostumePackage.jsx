@@ -1,6 +1,6 @@
 import React from "react";
 import ButtonContactar from "../../Buttons/ButtonAssist";
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function CostumePackage() {
   return (
@@ -21,7 +21,7 @@ export default function CostumePackage() {
           <span className='text-accent'>/mes</span>
         </div>
         <hr className='my-5' />
-        <p className='font-light text-accent sm:text-lg dark:text-gray-400'>
+        <p className=' text-accent sm:text-lg dark:text-gray-400'>
           Con nuestro plan personalizado, puedes adaptar fácilmente tu plan a
           las necesidades específicas de tu empresa. ¡Contáctanos ahora para
           obtener más información y comenzar a personalizar tu solución!
