@@ -1,6 +1,6 @@
 /** @format */
 
-import { Check } from "@/assets/svg";
+import { Check, WarningSVG } from "@/assets/svg";
 import Image from "next/image";
 
 const Items = ({ listItems }) => {
@@ -17,6 +17,14 @@ const Items = ({ listItems }) => {
           </div>
         </li>
       ))}
+      <li className='flex items-center space-x-3'>
+        <Image className='[&>svg]:fill-red' src={WarningSVG} alt='check' />
+        <div>
+          <span className='font-bold text-accent'>
+            No hay pago adicionales a WhatsApp
+          </span>
+        </div>
+      </li>
     </ul>
   );
 };

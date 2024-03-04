@@ -3,20 +3,31 @@ import Link from "next/link";
 import ButtonContactar from "../../Buttons/ButtonContactar";
 import Items from "./Items";
 
-const Package = ({ title, times, description, price, listItems, url }) => {
+const Package = ({
+  title,
+  times,
+  description,
+  price,
+  offer,
+  listItems,
+  url,
+}) => {
   return (
-    <div className='flex flex-col justify-between max-w-lg p-6 mx-auto text-center bg-white border border-gray-100 rounded-lg shadow text-accent '>
+    <div className='flex min-h-[846px] w-[349px] flex-col justify-between max-w-lg p-6 mx-auto text-center bg-white border border-gray-100 rounded-lg shadow text-accent '>
       <div>
-        <h3 className='mb-4 text-2xl font-semibold text-yellow-300'>{title}</h3>
-        <p className='font-light text-accent sm:text-lg dark:text-gray-400'>
+        <h3 className='mb-4 text-2xl font-semibold text-primary'>{title}</h3>
+        <p className='text-base text-accent sm:text-lg dark:text-gray-400'>
           {description}
         </p>
-        <div className='flex items-baseline justify-center my-4 mr-6 md:my-20'>
-          <span className='mr-2 text-5xl font-extrabold text-accent md:text-2xl'>
+        <span className='text-3xl text-accent md:text-2xl'>{offer}</span>
+        <div className='flex items-baseline justify-center gap-2 my-4 mr-6 md:my-20'>
+          <span className='text-base text-accent '>$</span>
+          <span className='text-3xl font-bold text-accent md:text-2xl'>
             {price}
           </span>
-          <span className='text-accent dark:text-gray-400'>{times}</span>
+          <span className='text-base text-accent '>{times}</span>
         </div>
+        <hr className='my-10' />
         <Items listItems={listItems} />
       </div>
 
