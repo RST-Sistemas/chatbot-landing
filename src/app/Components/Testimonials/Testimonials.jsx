@@ -1,7 +1,7 @@
 /** @format */
 
 import Testimonial from "./components/Testimonial";
-import { RobotTestimonial } from "@/assets/image";
+import { RobotTestimonial } from "../../../assets/image";
 import Image from "next/image";
 import Google from "./components/Google";
 

@@ -1,6 +1,6 @@
 /** @format */
 
-import { Check, WarningSVG } from "@/assets/svg";
+import { Check, WarningSVG } from "../../../../assets/svg";
 import Image from "next/image";
 
 const Items = ({ listItems }) => {

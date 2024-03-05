@@ -1,10 +1,10 @@
 /** @format */
 
 import React from "react";
-import { Robot } from "@/assets/image";
+import { Robot } from "../../..../../../assets/image";
 import Link from "next/link";
 import Image from "next/image";
-import { Bars } from "@/assets/svg";
+import { Bars } from "../../../assets/svg";
 
 const Navbar = () => {
   return (

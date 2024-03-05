@@ -1,7 +1,7 @@
 /** @format */
 
 import Image from "next/image";
-import { RobotContact } from "@/assets/image";
+import { RobotContact } from "../../../assets/image";
 import Form from "./components/Form";
 
 const Contact = () => {

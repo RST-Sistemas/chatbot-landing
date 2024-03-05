@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Guy, GirlBlack, GirlWhite } from "@/assets/image";
+// import { Guy, GirlBlack, GirlWhite } from "@../../../assets/image";
 import {
   ArrowTestimonialLeft,
   ArrowTestimonialRight,
   StarSVG,
-} from "@/assets/svg";
+} from "../../../../assets/svg";
 import { useState } from "react";
 
 const Testimonial = () => {

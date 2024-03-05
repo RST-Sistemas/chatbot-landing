@@ -1,7 +1,7 @@
 /** @format */
 
 import Collapse from "./components/Collapse";
-import { RobotFAQ } from "@/assets/image";
+import { RobotFAQ } from "../../../assets/image";
 import Image from "next/image";
 
 const FAQ = () => {

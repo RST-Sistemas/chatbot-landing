@@ -8,9 +8,9 @@ import {
   Money,
   Shopper,
   UserExp,
-} from "@/assets/svg";
-import Button from "@/app/Components/Buttons/ButtonAssist";
-import Link from "next/link";
+} from "../../../assets/svg";
+// import Button from "../app/Components/Buttons/ButtonAssist";
+// import Link from "next/link";
 
 const Feature = () => {
   return (

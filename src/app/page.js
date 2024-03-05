@@ -8,7 +8,7 @@ import {
   Navbar,
   PriceTable,
   Testimonials,
-} from "@/app/Components";
+} from "../app/Components";
 import WhatsAppSticky from "./Components/WhatsAppSticky";
 
 export default function Home() {

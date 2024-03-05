@@ -1,6 +1,6 @@
 /** @format */
 
-import { RobotHero } from "@/assets/image";
+import { RobotHero } from "../../../assets/image";
 import Image from "next/image";
 import Welcome from "./components/Welcome";
 
