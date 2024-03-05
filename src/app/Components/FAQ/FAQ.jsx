@@ -29,7 +29,7 @@ const listFAQ = [
   {
     title: "¿Qué es un chatbot de WhatsApp?",
     description:
-      "Un chatbot de WhatsApp es un software que utiliza reglas preprogramadas y remplazar las conversaciones humanas en WhatsApp: envia mensajes en timepo real, las 24 horas y los 7 dias de la semana.",
+      "Un chatbot de WhatsApp es un software que utiliza reglas preprogramadas y remplazar las conversaciones humanas en WhatsApp: envía mensajes en timepo real, las 24 horas y los 7 dias de la semana.",
   },
   {
     title: "¿Cómo funciona un chatbot de WhatsApp?",

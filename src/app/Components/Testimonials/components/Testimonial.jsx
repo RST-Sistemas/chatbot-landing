@@ -48,7 +48,7 @@ const Testimonial = () => {
             className=' w-[10px] h-[18px]'
           />
         </button>
-        <p className='text-lg transition-all ease-out text-accent'>
+        <p className='text-lg transition-all ease-out text-neutral'>
           {testimonialList[testimonialIndex].text}
         </p>
         <button
@@ -66,7 +66,7 @@ const Testimonial = () => {
           />
         </button>
       </div>
-      <div className='flex items-center gap-2 text-base text-accent'>
+      <div className='flex items-center gap-2 text-base text-neutral'>
         <Image
           width={36}
           height={36}

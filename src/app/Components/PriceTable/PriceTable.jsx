@@ -7,6 +7,7 @@ import Items from "./components/Items";
 import Link from "next/link";
 import ButtonContactar from "../Buttons/ButtonAssist";
 import CostumePackage from "./components/CostumePackage";
+import Flayer from "./components/Flayer";
 
 const listItems = {
   inicial: [
@@ -16,10 +17,10 @@ const listItems = {
     },
     {
       text: "",
-      bold: "Respuestas automaticas",
+      bold: "Respuestas automáticas",
     },
     {
-      text: "Actualizacion de mensajes automaticos",
+      text: "Actualización de mensajes automáticos",
       bold: "cada 2 meses",
     },
   ],
@@ -30,10 +31,10 @@ const listItems = {
     },
     {
       text: "",
-      bold: "Respuestas automaticas",
+      bold: "Respuestas automáticas",
     },
     {
-      text: "Actualizacion de mensajes automaticos",
+      text: "Actualización de mensajes automáticos",
       bold: "2 veces al mes",
     },
     {
@@ -64,11 +65,11 @@ const listItems = {
     },
     {
       text: "",
-      bold: "Respuestas automaticas",
+      bold: "Respuestas automáticas",
     },
     {
-      text: "Actualizacion de mensajes",
-      bold: "automaticos autoadministrable",
+      text: "Actualización de mensajes",
+      bold: "automáticos autoadministrable",
     },
     {
       text: "3 campaña para",
@@ -96,10 +97,11 @@ const listItems = {
 const PriceTable = () => {
   return (
     <>
-      <section className='bg-white dark:bg-gray-100 '>
+      <section className='bg-white'>
         <div className='max-w-screen-xl px-4 mx-auto lg:px-6 sm:px-20'>
           <Statement />
-          <div className='space-y-10 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0 md:gap-4 '>
+          <Flayer />
+          <div className='flex flex-wrap gap-5 '>
             <Package
               title='Gratis'
               description='¡Mejora tu atención al cliente sin costo alguno! Obtén acceso gratuito a herramientas básicas para impulsar tu negocio.'

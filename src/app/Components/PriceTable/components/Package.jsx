@@ -13,25 +13,25 @@ const Package = ({
   url,
 }) => {
   return (
-    <div className='flex min-h-[846px] w-[349px] flex-col  max-w-lg p-6 mx-auto text-center bg-white border border-gray-100 rounded-lg shadow text-accent '>
+    <div className='flex hover:scale-105 hover:shadow-xl hover:transition-all hover:duration-300  min-h-[846px] w-full md:w-[349px] flex-col justify-between lg p-6 mx-auto text-center bg-white border border-gray-100 rounded-lg shadow text-neutral '>
       <div>
         <h3 className='mb-4 text-2xl font-semibold text-primary'>{title}</h3>
-        <p className='text-base text-accent sm:text-lg dark:text-gray-400'>
+        <p className='text-base text-left text-neutral sm:text-lg dark:text-gray-400'>
           {description}
         </p>
 
         {price && (
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center mt-5'>
             <div className='absolute h-1 mt-1 bg-red-600 w-28'></div>
             <p className='text-2xl '>${price}</p>
           </div>
         )}
         <div className='flex items-baseline justify-center gap-2 '>
-          <span className='text-base text-accent '>$</span>
-          <span className='text-3xl font-bold text-accent md:text-2xl'>
+          <span className='text-base text-neutral '>$</span>
+          <span className='text-3xl font-bold text-neutral md:text-2xl'>
             {offer}
           </span>
-          <span className='text-base text-accent '>{times}</span>
+          <span className='text-base text-neutral '>{times}</span>
         </div>
         <hr className='my-10' />
         <Items listItems={listItems} />

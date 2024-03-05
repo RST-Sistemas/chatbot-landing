@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const TyC = () => {
   return (
-    <p className='text-xs sm:text-base text-accent'>
+    <p className='text-xs sm:text-base text-neutral'>
       Al enviar este formulario, acepta nuestros{" "}
       <Link href={"#"} className='underline text-primary '>
         términos y condiciones

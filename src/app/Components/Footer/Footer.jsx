@@ -2,145 +2,39 @@
 
 import React from "react";
 import { Robot } from "../../..../../../assets/image";
+import { ArrowRight } from "../../..../../../assets/svg";
 import Link from "next/link";
 import Image from "next/image";
-
-import {
-  LinkedInIcon,
-  InstagramIcon,
-  FacebookIcon,
-  WhatsappIcon,
-} from "../../../assets/svg";
+import ItemsFooter from "./Components/ItemsFooter";
+import SocialMedia from "./Components/SocialMedia";
 
 const Footer = () => {
   return (
-    <footer className='bg-secondary'>
+    <footer className='bg-base-200'>
       <div className='w-full max-w-screen-xl px-5 pt-10 mx-auto md:px-24 lg:px-44 '>
-        <div className='flex flex-wrap justify-between '>
-          <div>
-            <h2 className='my-6 text-sm font-bold uppercase text-accent'>
-              Empresa
-            </h2>
-            <ul className='text-accent '>
-              <li className='mb-4'>
-                <Link href='#' className=' hover:underline'>
-                  Quienes somos
-                </Link>
-              </li>
-              <li className='mb-4'>
-                <Link href='#' className='hover:underline'>
-                  Productos y servicios
-                </Link>
-              </li>
-              <li className='mb-4'>
-                <Link href='#' className='hover:underline'>
-                  Proyectos
-                </Link>
-              </li>
-              <li className='mb-4'>
-                <Link href='#' className='hover:underline'>
-                  Trabaja con nosotros
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 className='my-6 text-sm font-bold uppercase text-accent'>
-              Centro de ayuda
-            </h2>
-            <ul className='text-accent'>
-              <li className='mb-4'>
-                <Link href='#' className='hover:underline'>
-                  Necesito una web
-                </Link>
-              </li>
-              <li className='mb-4'>
-                <Link href='#' className='hover:underline'>
-                  Soporte técnico
-                </Link>
-              </li>
-              <li className='mb-4'>
-                <Link href='#' className='hover:underline'>
-                  Asesoramiento a empresas
-                </Link>
-              </li>
-              <li className='mb-4'>
-                <Link href='#' className='hover:underline'>
-                  Contanos tu idea
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 className='my-6 text-sm font-bold uppercase text-accent'>
-              Legales
-            </h2>
-            <ul className='text-accent'>
-              <li className='mb-4'>
-                <Link href='#' className='hover:underline'>
-                  Política de privacidad
-                </Link>
-              </li>
-              <li className='mb-4'>
-                <Link href='#' className='hover:underline'>
-                  Asesoramiento legal IT
-                </Link>
-              </li>
-              <li className='mb-4'>
-                <Link href='#' className='hover:underline'>
-                  Términos y condiciones
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <ItemsFooter />
         <hr className='my-5 border-accent opacity-15 ' />
         <div className='flex items-center justify-center gap-5 mx-4'>
           <Image src={Robot} width={49} height={54} alt='robot' />
           <h1 className='text-2xl'> DanielBot</h1>
         </div>
-        <span className='block mx-4 text-center text-accent'>
+        <span className='block mx-4 text-center text-neutral'>
           © 2015 - 2024
           <Link href='#' className='hover:underline'>
             {" "}
             RST Argentina
           </Link>
-          . All Rights Reserved.
+          . Reservados todos los derechos.
         </span>
       </div>
 
-      <div className='flex items-center justify-center pb-2 mt-6 space-x-5 md:mt-4 rtl:space-x-reverse'>
-        <Link href='https://www.facebook.com/rstargentina' target='_blank'>
-          <Image
-            src={FacebookIcon}
-            alt='logo fb'
-            className='w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2 hover:animate-bounce'
-          />
-          <span className='sr-only'>Facebook page</span>
-        </Link>
-        <Link href='https://www.instagram.com/rstargentina/' target='_blank'>
-          <Image
-            src={InstagramIcon}
-            alt='logo ig'
-            className='w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2 hover:animate-bounce'
-          />
-          <span className='sr-only'>Instagram page</span>
-        </Link>
-        <Link href='https://wa.me/2615086780' target='_blank'>
-          <Image
-            src={WhatsappIcon}
-            alt='logo wpp'
-            className='w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2  hover:animate-bounce'
-          />
-          <span className='sr-only'>Whatsapp</span>
-        </Link>
-        <Link href='https://www.linkedin.com/in/rstargentina' target='_blank'>
-          <Image
-            src={LinkedInIcon}
-            alt='logo li'
-            className='w-[2rem] h-[2rem] text-gray-400 hover:text-gray-900 dark:hover:text-white m-2 hover:animate-bounce'
-          />
-          <span className='sr-only'>Linkedin page</span>
+      <SocialMedia />
+
+      <div className=' translate-x-0 z-30'>
+        <Link href={"http://localhost:3000/"}>
+          <div className='-rotate-90 absolute bottom-5 right-16 min-[375px]:right-24 min-[425px]:right-[74px] min-[480px]:right-[35px] min-[520px]:right-[15px] sm:right-5 flex  items-center justify-center w-16 h-16 rounded-full bg-secondary hover:scale-110 transition-all ease-out'>
+            <Image src={ArrowRight} alt='whatsapp' width={40} height={40} />
+          </div>
         </Link>
       </div>
     </footer>

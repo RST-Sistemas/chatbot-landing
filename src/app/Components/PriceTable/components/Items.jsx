@@ -10,9 +10,9 @@ const Items = ({ listItems }) => {
         <li key={index} className='flex items-center space-x-3'>
           <Image src={Check} alt='check' />
           <div>
-            <span className='text-accent'>{item.text}</span>
+            <span className='text-neutral'>{item.text}</span>
             {item.bold && (
-              <span className='font-bold text-accent'> {item.bold}</span>
+              <span className='font-bold text-neutral'> {item.bold}</span>
             )}
           </div>
         </li>
@@ -20,7 +20,7 @@ const Items = ({ listItems }) => {
       <li className='flex items-center space-x-3'>
         <Image className='[&>svg]:fill-red' src={WarningSVG} alt='check' />
         <div>
-          <span className='font-bold text-accent'>
+          <span className='font-bold text-neutral'>
             No hay pago adicionales a WhatsApp
           </span>
         </div>
