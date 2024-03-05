@@ -3,72 +3,93 @@
 import React from "react";
 import Package from "./components/Package";
 import Statement from "./components/Statement";
+import Items from "./components/Items";
+import Link from "next/link";
+import ButtonContactar from "../Buttons/ButtonAssist";
+import CostumePackage from "./components/CostumePackage";
+import Flayer from "./components/Flayer";
 
 const listItems = {
   inicial: [
     {
-      text: "1000 chats por mes",
+      text: "3 flujos",
       bold: "",
     },
     {
-      text: "Unica Instalacion con integraciones",
-      bold: "",
+      text: "",
+      bold: "Respuestas automáticas",
     },
     {
-      text: "Asistencia",
-      bold: "Personalizada",
-    },
-    {
-      text: "Campañas de",
-      bold: "Difusion",
-    },
-    {
-      text: "Autogestion ",
-      bold: "de flujos",
+      text: "Actualización de mensajes automáticos",
+      bold: "cada 2 meses",
     },
   ],
-  premium: [
+  emprendedores: [
     {
-      text: "Hasta 15000 chats mensuales",
+      text: "6 flujos",
       bold: "",
     },
     {
-      text: "Integracion completa",
-      bold: "",
+      text: "",
+      bold: "Respuestas automáticas",
     },
     {
-      text: "Flujos ",
-      bold: "comunicacionales",
+      text: "Actualización de mensajes automáticos",
+      bold: "2 veces al mes",
     },
     {
-      text: "Flexibilidad ",
-      bold: "Autonomia",
+      text: "Campaña para",
+      bold: "350 contactos",
     },
     {
-      text: "Marketing  ",
-      bold: "sobre campañas de difusion",
+      text: "",
+      bold: "2 multiagentes",
+    },
+    {
+      text: "",
+      bold: "3 base de datos",
+    },
+    {
+      text: "",
+      bold: "2 descargas mensuales",
+    },
+    {
+      text: "",
+      bold: "Envio de archivos multimedia",
     },
   ],
-  enterprise: [
+  pyme: [
     {
-      text: "60.000 chats válidos/mes",
+      text: "10 flujos",
       bold: "",
     },
     {
-      text: "Multiagente",
-      bold: "",
+      text: "",
+      bold: "Respuestas automáticas",
     },
     {
-      text: "Asistencia ",
-      bold: "Personalizada",
+      text: "Actualización de mensajes",
+      bold: "automáticos autoadministrable",
     },
     {
-      text: "Asesoramiento en",
-      bold: "Marketing",
+      text: "3 campaña para",
+      bold: "2.000 contactos por campaña",
     },
     {
-      text: "Flexibilidad",
-      bold: "Autonomia",
+      text: "",
+      bold: "5 multiagentes",
+    },
+    {
+      text: "",
+      bold: "5 base de datos",
+    },
+    {
+      text: "",
+      bold: "Descargas ilimitadas",
+    },
+    {
+      text: "",
+      bold: "Envio de archivos multimedia",
     },
   ],
 };
@@ -76,36 +97,40 @@ const listItems = {
 const PriceTable = () => {
   return (
     <>
-      <section className='bg-white dark:bg-gray-100 '>
+      <section className='bg-white'>
         <div className='max-w-screen-xl px-4 mx-auto lg:px-6 sm:px-20'>
           <Statement />
-          <div className='space-y-10 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0 md:gap-4 '>
+          <Flayer />
+          <div className='flex flex-wrap gap-5 '>
             <Package
-              title='Inicial'
-              description='La mejor opción para emprendedores.'
-              price='$120.000 '
-              times={"único"}
+              title='Gratis'
+              description='¡Mejora tu atención al cliente sin costo alguno! Obtén acceso gratuito a herramientas básicas para impulsar tu negocio.'
+              offer='00 '
+              times={"/mes"}
               listItems={listItems.inicial}
               url='#contact'
             />
 
             <Package
-              title='Premium'
-              description='Ideal para PyMEs con un foco medio de comunicación.'
-              price='$185.000 '
+              title='Emprendedores'
+              description='Haz crecer tu empresa con nuestra solución diseñada para emprendedores. '
+              price='89.000 '
+              offer='50.000'
               times={"/mes"}
-              listItems={listItems.premium}
+              listItems={listItems.emprendedores}
               url='#contact'
             />
 
             <Package
-              title='Enterprise'
-              description='Ideal para empresas de alto tránsito comunicacional.'
-              price='$300.000 '
+              title='PyMe'
+              description='Optimiza la eficiencia de tu negocio con nuestra oferta especial para PyMes.'
+              offer='89.000 '
+              price='165.000'
               times={"/mes"}
-              listItems={listItems.enterprise}
+              listItems={listItems.pyme}
               url='#contact'
             />
+            <CostumePackage />
           </div>
         </div>
       </section>

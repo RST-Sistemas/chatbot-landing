@@ -1,10 +1,29 @@
 /** @format */
 
 import React from "react";
-import { Robot } from "@/assets/image";
+import { Robot } from "../../..../../../assets/image";
 import Link from "next/link";
 import Image from "next/image";
-import { Bars } from "@/assets/svg";
+import { Bars } from "../../../assets/svg";
+
+const listNavbar = [
+  {
+    name: "Características",
+    direction: "#feature",
+  },
+  {
+    name: "Productos",
+    direction: "#price-table",
+  },
+  {
+    name: "Testimonios",
+    direction: "#testimonials",
+  },
+  {
+    name: "Preguntas frecuentes",
+    direction: "#faq",
+  },
+];
 
 const Navbar = () => {
   return (
@@ -33,42 +52,18 @@ const Navbar = () => {
           </div>
           <div className='flex-none hidden lg:block '>
             <ul className='items-center gap-5 menu menu-horizontal'>
-              <li>
-                <Link
-                  className='[&>div]:hover:bg-primary text-base  block px-3 py-2   text-accent md:p-0  md:hover:bg-transparent md:border-0'
-                  href='#feature'
-                >
-                  Caracteristicas
-                  <div className='w-full h-[2.5px] mt-[1px] bg-accent rounded-lg  '></div>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='#price-table'
-                  className='[&>div]:hover:bg-primary  block px-3 py-2 text-base rounded text-accent md:p-0  md:hover:bg-transparent md:border-0'
-                >
-                  Productos
-                  <div className='w-full  bg-accent rounded-lg h-[2.5px] mt-[1px] '></div>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='#testimonials'
-                  className='[&>div]:hover:bg-primary  block px-3 py-2 text-base rounded text-accent md:p-0  md:hover:bg-transparent md:border-0'
-                >
-                  Testimonios
-                  <div className='w-full  bg-accent rounded-lg h-[2.5px] mt-[1px] '></div>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='#faq'
-                  className='[&>div]:hover:bg-primary  block px-3 py-2 text-base rounded text-accent md:p-0  md:hover:bg-transparent md:border-0'
-                >
-                  Preguntas frecuentes
-                  <div className='w-full  bg-accent rounded-lg h-[2.5px] mt-[1px] '></div>
-                </Link>
-              </li>
+              {listNavbar.map((item, index) => (
+                <li key={index}>
+                  <Link
+                    className='[&>div]:hover:bg-primary [&>div]:hover:transition-all [&>div]:hover:ease-in [&>div]:hover:duration-150  text-base block px-3 py-2 text-neutral md:p-0 active:bg-transparent  md:hover:bg-transparent md:border-0'
+                    href={item.direction}
+                  >
+                    {item.name}
+                    <div className='w-full h-[2.5px] mt-[1px] rounded-lg '></div>
+                  </Link>
+                </li>
+              ))}
+
               <li>
                 <Link href={"#contact"} className='p-0'>
                   <button className=' h-[40px] btn btn-primary btn-sm text-white'>

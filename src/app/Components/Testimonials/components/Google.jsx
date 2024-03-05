@@ -1,4 +1,4 @@
-import { GoogleSVG, StarSVG } from "@/assets/svg";
+import { GoogleSVG, StarSVG } from "../../../../assets/svg";
 import Image from "next/image";
 import Link from "next/link";
 

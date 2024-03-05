@@ -2,7 +2,7 @@ const Input = ({ label, placeholder }) => {
   return (
     <label className='w-full form-control'>
       <div className='label'>
-        <span className='label-text text-accent'>{label}</span>
+        <span className='label-text text-neutral'>{label}</span>
       </div>
       <input
         type='type'

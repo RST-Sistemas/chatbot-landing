@@ -1,18 +1,35 @@
 "use client";
-/** @format */
 
 import Image from "next/image";
 import Link from "next/link";
-import { Guy, GirlBlack, GirlWhite } from "@/assets/image";
+// import { Guy, GirlBlack, GirlWhite } from "@../../../assets/image";
 import {
   ArrowTestimonialLeft,
   ArrowTestimonialRight,
   StarSVG,
-} from "@/assets/svg";
+} from "../../../../assets/svg";
 import { useState } from "react";
 
 const Testimonial = () => {
   const [testimonialIndex, setTestimonialIndex] = useState(1);
+
+  const testimonialList = [
+    {
+      text: "Excelente servicio! Los llame en 3 minutos se comunicaron vía Whatsapp conmigo me dieron todas las indicaciones, todo súper dinámico me enviaron el test vía Whatsapp el mismo día, y no tuve ningún problema en cruzar a chile !",
+      name: "Luden Van Herzock",
+      icon: "https://lh3.googleusercontent.com/a-/ALV-UjVqcFdkhS4TtQwynuV2j3D_f5pn6rwdkAFbbFMKqtYLWY8=w75-h75-p-rp-mo-br100",
+    },
+    {
+      text: "Muy buena atención, muy clara y precisa. En todo momento me contestaron rápido, y fueron súper puntuales en el horario del turno. Muy conforme",
+      name: "Barbara Oña",
+      icon: "https://lh3.googleusercontent.com/a-/ALV-UjUURL4oJWCxBn6NjuJmvQNiRqkrwb62xt_DR8EYljU9NEU=w75-h75-p-rp-mo-br100",
+    },
+    {
+      text: "Me atendieron muy rápido y de modo muy profesional. El chico que me respondió por teléfono muy correcto y predispuesto. Las chicas que atienden en el laboratorio muy simpáticas, atentas y profesionales. Da gusto ir al lugar.",
+      name: "Aisha Williams",
+      icon: "https://lh3.googleusercontent.com/a-/ALV-UjXqYCi5R204bE-bZ-deWXgFkHrCVkYllWmdW-k5AitoxA=w75-h75-p-rp-mo-br100",
+    },
+  ];
 
   return (
     <div className='flex flex-col items-center gap-5 p-5 rounded-lg bg-slate-100 lg:bg-transparent'>
@@ -31,7 +48,7 @@ const Testimonial = () => {
             className=' w-[10px] h-[18px]'
           />
         </button>
-        <p className='text-lg transition-all ease-out text-accent'>
+        <p className='text-lg transition-all ease-out text-neutral'>
           {testimonialList[testimonialIndex].text}
         </p>
         <button
@@ -49,7 +66,7 @@ const Testimonial = () => {
           />
         </button>
       </div>
-      <p className='flex items-center gap-2 text-base text-accent'>
+      <div className='flex items-center gap-2 text-base text-neutral'>
         <Image
           width={36}
           height={36}
@@ -64,27 +81,9 @@ const Testimonial = () => {
           <Image width={22} height={20} src={StarSVG} alt='Star SVG' />
           <Image width={22} height={20} src={StarSVG} alt='Star SVG' />
         </div>
-      </p>
+      </div>
     </div>
   );
 };
-
-const testimonialList = [
-  {
-    text: "Excelente servicio! Los llame en 3 minutos se comunicaron vía Whatsapp conmigo me dieron todas las indicaciones, todo súper dinámico me enviaron el test vía Whatsapp el mismo día, y no tuve ningún problema en cruzar a chile !",
-    name: "Luden Van Herzock",
-    icon: "https://lh3.googleusercontent.com/a-/ALV-UjVqcFdkhS4TtQwynuV2j3D_f5pn6rwdkAFbbFMKqtYLWY8=w75-h75-p-rp-mo-br100",
-  },
-  {
-    text: "Muy buena atención, muy clara y precisa. En todo momento me contestaron rápido, y fueron súper puntuales en el horario del turno. Muy conforme",
-    name: "Barbara Oña",
-    icon: "https://lh3.googleusercontent.com/a-/ALV-UjUURL4oJWCxBn6NjuJmvQNiRqkrwb62xt_DR8EYljU9NEU=w75-h75-p-rp-mo-br100",
-  },
-  {
-    text: "Me atendieron muy rápido y de modo muy profesional. El chico que me respondió por teléfono muy correcto y predispuesto. Las chicas que atienden en el laboratorio muy simpáticas, atentas y profesionales. Da gusto ir al lugar.",
-    name: "Aisha Williams",
-    icon: "https://lh3.googleusercontent.com/a-/ALV-UjXqYCi5R204bE-bZ-deWXgFkHrCVkYllWmdW-k5AitoxA=w75-h75-p-rp-mo-br100",
-  },
-];
 
 export default Testimonial;

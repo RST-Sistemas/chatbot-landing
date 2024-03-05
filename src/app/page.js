@@ -8,7 +8,7 @@ import {
   Navbar,
   PriceTable,
   Testimonials,
-} from "@/app/Components";
+} from "../app/Components";
 import WhatsAppSticky from "./Components/WhatsAppSticky";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
       <div>
         <Navbar />
         <Hero />
-        <div className='px-10 md:px-22 lg:px-44'>
+        <div className='px-10 md:px-22 xl:px-44'>
           <Feature />
           <hr id='price-table' className='my-10' />
           <PriceTable />
