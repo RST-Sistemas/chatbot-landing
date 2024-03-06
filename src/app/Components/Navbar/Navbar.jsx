@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <nav className='sticky top-0 z-50 shadow drawer drawer-end shadow-neutral-200'>
       <input id='my-drawer-3' type='checkbox' className='drawer-toggle' />
-      <div className='flex flex-col drawer-content'>
+      <div className='flex flex-col w-full drawer-content'>
         {/* Navbar */}
         <div className='justify-between w-full navbar bg-gray-50 md:px-24 lg:px-44 '>
           <Link href='#' className='flex items-center '>
@@ -51,7 +51,7 @@ const Navbar = () => {
             </label>
           </div>
           <div className='flex-none hidden lg:block '>
-            <ul className='items-center gap-5 menu menu-horizontal'>
+            <ul className='items-center gap-5 px-0 menu menu-horizontal'>
               {listNavbar.map((item, index) => (
                 <li key={index}>
                   <Link

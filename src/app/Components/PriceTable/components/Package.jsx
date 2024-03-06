@@ -13,7 +13,7 @@ const Package = ({
   url,
 }) => {
   return (
-    <div className='flex hover:scale-105 hover:shadow-xl hover:transition-all hover:duration-300  min-h-[846px] w-full md:w-[349px] flex-col justify-between lg p-6 mx-auto text-center bg-white border border-gray-100 rounded-lg shadow text-neutral '>
+    <div className='flex hover:scale-105 hover:shadow-xl hover:transition-all hover:duration-300  min-h-[846px] w-full md:max-w-[349px] flex-col justify-between lg p-6  text-center bg-white border border-gray-100 rounded-lg shadow text-neutral '>
       <div>
         <h3 className='mb-4 text-2xl font-semibold text-primary'>{title}</h3>
         <p className='text-base text-center text-neutral sm:text-lg dark:text-gray-400'>
