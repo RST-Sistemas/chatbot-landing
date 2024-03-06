@@ -9,7 +9,7 @@ const Item = ({ image, title, description }) => (
       <h3 className='mb-2 text-xl font-bold text-yellow-400 dark:text-white'>
         {title}
       </h3>
-      <p className='text-gray-500 dark:text-gray-400 text-left'>
+      <p className='text-left text-gray-500 dark:text-gray-400'>
         {description}
       </p>
     </div>

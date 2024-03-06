@@ -69,10 +69,10 @@ const listItems = {
     },
     {
       text: "Actualización de mensajes",
-      bold: "automáticos autoadministrable",
+      bold: "automáticos autoadministrables",
     },
     {
-      text: "3 campaña para",
+      text: "3 campañas para",
       bold: "2.000 contactos por campaña",
     },
     {
@@ -81,7 +81,7 @@ const listItems = {
     },
     {
       text: "",
-      bold: "5 base de datos",
+      bold: "5 bases de datos",
     },
     {
       text: "",

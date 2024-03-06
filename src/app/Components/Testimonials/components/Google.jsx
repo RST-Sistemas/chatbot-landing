@@ -24,7 +24,7 @@ export default function Google() {
           Puntaje: <span className='font-bold'>4.9/5 | 318</span> opiniones
         </p>
         <p className='text-sm text-blue-500 underline hover:text-blue-400'>
-          ver mas comentarios
+          ver más comentarios
         </p>
       </div>
     </Link>
