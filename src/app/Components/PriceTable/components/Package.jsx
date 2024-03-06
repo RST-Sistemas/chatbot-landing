@@ -16,15 +16,18 @@ const Package = ({
     <div className='flex hover:scale-105 hover:shadow-xl hover:transition-all hover:duration-300  min-h-[846px] w-full md:w-[349px] flex-col justify-between lg p-6 mx-auto text-center bg-white border border-gray-100 rounded-lg shadow text-neutral '>
       <div>
         <h3 className='mb-4 text-2xl font-semibold text-primary'>{title}</h3>
-        <p className='text-base text-left text-neutral sm:text-lg dark:text-gray-400'>
+        <p className='text-base text-center text-neutral sm:text-lg dark:text-gray-400'>
           {description}
         </p>
 
-        {price && (
+        {price ? (
           <div className='flex items-center justify-center mt-5'>
             <div className='absolute h-1 mt-1 bg-red-600 w-28'></div>
             <p className='text-2xl '>${price}</p>
+            <span className='text-base text-neutral '>{times}</span>
           </div>
+        ) : (
+          <div className='mt-5'></div>
         )}
         <div className='flex items-baseline justify-center gap-2 '>
           <span className='text-base text-neutral '>$</span>

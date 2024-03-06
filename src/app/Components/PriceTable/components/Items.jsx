@@ -21,7 +21,7 @@ const Items = ({ listItems }) => {
         <Image className='[&>svg]:fill-red' src={WarningSVG} alt='check' />
         <div>
           <span className='font-bold text-neutral'>
-            No hay pago adicionales a WhatsApp
+            No hay pagos adicionales a WhatsApp
           </span>
         </div>
       </li>

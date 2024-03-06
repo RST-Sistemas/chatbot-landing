@@ -51,7 +51,7 @@ const Feature = () => {
           <Item
             image={Shopper}
             title='Mejora las compras online'
-            description='Liberate de estar ofreciendo productos, deja que el chat lo haga.'
+            description='Libérate de estar ofreciendo productos, deja que el chat lo haga.'
           />
         </div>
       </div>
