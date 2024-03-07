@@ -100,35 +100,37 @@ const PriceTable = () => {
       <section>
         <Statement />
         <Flayer />
-        <div className='flex flex-wrap justify-around min-[1167px]:justify-between gap-5'>
-          <Package
-            title='Gratis'
-            description='¡Mejora tu atención al cliente sin costo alguno! Obtén acceso gratuito a herramientas básicas para impulsar tu negocio.'
-            offer='00 '
-            times={"/mes"}
-            listItems={listItems.inicial}
-            url='#contact'
-          />
+        <div className='flex flex-col items-center justify-center gap-5'>
+          <div className='flex flex-col gap-5 xl:items-start xl:flex-row xl:justify-between'>
+            <Package
+              title='Gratis'
+              description='¡Mejora tu atención al cliente gratis con nuestras herramientas de negocio!'
+              offer='00 '
+              times={"/mes"}
+              listItems={listItems.inicial}
+              url='#contact'
+            />
 
-          <Package
-            title='Emprendedores'
-            description='Haz crecer tu empresa con nuestra solución diseñada para emprendedores. '
-            price='89.000 '
-            offer='50.000'
-            times={"/mes"}
-            listItems={listItems.emprendedores}
-            url='#contact'
-          />
+            <Package
+              title='Emprendedores'
+              description='Haz crecer tu empresa con nuestra solución diseñada para emprendedores. '
+              price='89.000 '
+              offer='50.000'
+              times={"/mes"}
+              listItems={listItems.emprendedores}
+              url='#contact'
+            />
 
-          <Package
-            title='PyMe'
-            description='Optimiza la eficiencia de tu negocio con nuestra oferta especial para PyMes.'
-            offer='89.000 '
-            price='165.000'
-            times={"/mes"}
-            listItems={listItems.pyme}
-            url='#contact'
-          />
+            <Package
+              title='PyMe'
+              description='Optimiza la eficiencia de tu negocio con nuestra oferta especial para PyMes.'
+              offer='89.000 '
+              price='165.000'
+              times={"/mes"}
+              listItems={listItems.pyme}
+              url='#contact'
+            />
+          </div>
           <CostumePackage />
         </div>
       </section>
