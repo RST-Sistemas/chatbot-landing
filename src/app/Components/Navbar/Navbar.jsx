@@ -27,11 +27,11 @@ const listNavbar = [
 
 const Navbar = () => {
   return (
-    <nav className='sticky top-0 z-50 shadow drawer drawer-end shadow-neutral-200'>
+    <nav className='sticky top-0 z-50 shadow-lg drawer drawer-end bg-base-100'>
       <input id='my-drawer-3' type='checkbox' className='drawer-toggle' />
-      <div className='flex flex-col w-full drawer-content'>
+      <div className='flex flex-col items-center drawer-content'>
         {/* Navbar */}
-        <div className='justify-between w-full navbar bg-gray-50 md:px-24 lg:px-44 '>
+        <div className='justify-between w-full navbar md:px-24 lg:px-44 '>
           <Link href='#' className='flex items-center '>
             <Image
               src={Robot}
@@ -51,7 +51,7 @@ const Navbar = () => {
             </label>
           </div>
           <div className='flex-none hidden lg:block '>
-            <ul className='items-center gap-5 px-0 menu menu-horizontal'>
+            <ul className='items-center gap-5 px-0 sm:px-4 menu menu-horizontal '>
               {listNavbar.map((item, index) => (
                 <li key={index}>
                   <Link
@@ -81,30 +81,30 @@ const Navbar = () => {
           aria-label='close sidebar'
           className='drawer-overlay'
         ></label>
-        <ul className='min-h-full p-4 pt-10 menu w-80 bg-gray-50'>
+        <ul className='min-h-full p-4 pt-10 menu menu-vertical w-[80%] max-w-80 bg-gray-50'>
           <li>
-            <Link className='text-lg' href='#feature'>
+            <Link className='px-0 text-lg sm:px-4 ' href='#feature'>
               Caracteristicas
             </Link>
           </li>
           <li>
-            <Link className='text-lg' href='#price-table'>
+            <Link className='px-0 text-lg sm:px-4' href='#price-table'>
               Productos
             </Link>
           </li>
           <li>
-            <Link className='text-lg' href='#testimonials'>
+            <Link className='px-0 text-lg sm:px-4' href='#testimonials'>
               Testimonios
             </Link>
           </li>
           <li>
-            <Link className='text-lg' href='#faq'>
+            <Link className='px-0 text-lg sm:px-4' href='#faq'>
               Preguntas frecuentes
             </Link>
           </li>
           <li>
-            <Link className='text-lg' href={"#contact"}>
-              <button className='h-10 text-lg text-white btn-wide btn btn-primary btn-sm'>
+            <Link className='px-0 text-lg sm:px-4' href={"#contact"}>
+              <button className='w-full h-10 text-lg text-white btn btn-primary btn-sm'>
                 Contactar
               </button>
             </Link>

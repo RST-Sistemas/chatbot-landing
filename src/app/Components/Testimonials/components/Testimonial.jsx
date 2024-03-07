@@ -66,14 +66,16 @@ const Testimonial = () => {
           />
         </button>
       </div>
-      <div className='flex items-center gap-2 text-base text-neutral'>
-        <Image
-          width={36}
-          height={36}
-          src={testimonialList[testimonialIndex].icon}
-          alt='guy'
-        />
-        {testimonialList[testimonialIndex].name} |{" "}
+      <div className='flex flex-col items-center gap-2 text-base sm:flex-row text-neutral'>
+        <div className='flex items-center gap-5'>
+          <Image
+            width={36}
+            height={36}
+            src={testimonialList[testimonialIndex].icon}
+            alt='guy'
+          />
+          {testimonialList[testimonialIndex].name}
+        </div>
         <div className='flex gap-1'>
           <Image width={22} height={20} src={StarSVG} alt='Star SVG' />
           <Image width={22} height={20} src={StarSVG} alt='Star SVG' />

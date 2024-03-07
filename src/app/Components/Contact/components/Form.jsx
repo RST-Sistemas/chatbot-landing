@@ -38,9 +38,10 @@ export default function Form() {
     <form
       action='https://getform.io/f/12ca030b-28e7-4cb5-a67b-3bd0ea264eff'
       method='POST'
+      className='w-full'
     >
       <div>
-        <div className='grid grid-cols-1 md:grid-cols-[1fr_1fr] w- md:gap-5'>
+        <div className='grid grid-cols-1 md:grid-cols-[1fr_1fr] md:gap-5'>
           <Input
             label={"Nombre completo"}
             placeholder={"Bonnie Green"}
@@ -97,7 +98,7 @@ export default function Form() {
         </div>
       </div>
 
-      <div className='w-[320px] sm:w-full my-2'>
+      <div className='w-full my-2 sm:w-full'>
         <TerminosCondiciones />
       </div>
 
