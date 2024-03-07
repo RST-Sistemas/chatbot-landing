@@ -7,7 +7,7 @@ import Welcome from "./components/Welcome";
 const Hero = () => {
   return (
     <>
-      <div className=' flex flex-col items-center lg:items-start w-full lg:h-[99vh + 630px] gap-5 pt-10 bg-base-200 lg:flex-row lg:justify-between lg:px-44'>
+      <div className='flex flex-col items-center lg:items-start w-full lg:h-[99vh + 630px] gap-5 pt-10 bg-base-200 lg:flex-row lg:justify-between lg:px-44'>
         <Welcome />
         <Image
           src={RobotHero}

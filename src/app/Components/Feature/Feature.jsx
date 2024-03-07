@@ -16,13 +16,15 @@ const Feature = () => {
     <>
       <div className='flex flex-col items-center h-full gap-5 pt-10 bg-base-100 '>
         <div className='flex flex-col gap-5 text-center'>
-          <h1 className='text-2xl font-bold'>¿Por qué elegir DanielBot?</h1>
-          <h2 className='w-[350px]'>
+          <h1 className='text-xl font-bold md:text-2xl'>
+            ¿Por qué elegir DanielBot?
+          </h1>
+          <h2 className='max-w-[350px] w-full '>
             ChatBot ofrece velocidad, confiabilidad, atención, personalización y
             otras cosas más.
           </h2>
         </div>
-        <div className='md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-20'>
+        <div className='px-5 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-20'>
           <Item
             image={Money}
             title='Sin Costos Ocultos'

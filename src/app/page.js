@@ -14,10 +14,11 @@ import WhatsAppSticky from "./Components/WhatsAppSticky";
 export default function Home() {
   return (
     <main className='flex flex-col items-center justify-between scroll-smooth focus:scroll-auto overflow-clip'>
-      <div>
+      <div className='w-full'>
         <Navbar />
         <Hero />
-        <div className='px-10 md:px-22 xl:px-44'>
+        {/* <div className='px-10 md:px-22 xl:px-44'> */}
+        <div className=''>
           <Feature />
           <hr id='price-table' className='my-10' />
           <PriceTable />
