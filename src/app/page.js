@@ -17,8 +17,8 @@ export default function Home() {
       <div className='w-full'>
         <Navbar />
         <Hero />
-        {/* <div className='px-10 md:px-22 xl:px-44'> */}
-        <div className=''>
+        <div className='sm:px-10 md:px-22 xl:px-44'>
+          {/* <div className=''> */}
           <Feature />
           <hr id='price-table' className='my-10' />
           <PriceTable />

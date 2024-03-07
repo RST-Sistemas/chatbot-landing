@@ -32,8 +32,12 @@ const Footer = () => {
 
       <div className='z-30 translate-x-0 '>
         <Link href={"https://www.danielbot.com.ar/"}>
-          <div className='absolute flex items-center justify-center w-16 h-16 transition-all ease-out -rotate-90 rounded-full bottom-4 right-4 bg-secondary hover:scale-110'>
-            <Image src={ArrowRight} alt='whatsapp' width={40} height={40} />
+          <div className='absolute flex items-center justify-center w-8 h-8 transition-all ease-out -rotate-90 rounded-full sm:w-16 sm:h-16 bottom-4 right-4 bg-secondary hover:scale-110'>
+            <Image
+              src={ArrowRight}
+              alt='whatsapp'
+              className='w-5 h-5 sm:w-10 sm:h-10'
+            />
           </div>
         </Link>
       </div>
