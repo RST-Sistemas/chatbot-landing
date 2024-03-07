@@ -35,11 +35,7 @@ export default function Form() {
   };
 
   return (
-    <form
-      action='https://getform.io/f/12ca030b-28e7-4cb5-a67b-3bd0ea264eff'
-      method='POST'
-      className='w-full'
-    >
+    <form onSubmit={formSubmit} method='POST' className='w-full'>
       <div>
         <div className='grid grid-cols-1 md:grid-cols-[1fr_1fr] md:gap-5'>
           <Input
