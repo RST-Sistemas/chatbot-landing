@@ -27,11 +27,11 @@ const listNavbar = [
 
 const Navbar = () => {
   return (
-    <nav className='sticky top-0 z-50 shadow-lg drawer drawer-end bg-base-100'>
+    <nav className='sticky top-0 z-50 shadow-lg bg-base-100 drawer drawer-end'>
       <input id='my-drawer-3' type='checkbox' className='drawer-toggle' />
       <div className='flex flex-col items-center drawer-content'>
         {/* Navbar */}
-        <div className='justify-between w-full navbar md:px-24 lg:px-44 '>
+        <div className='justify-between max-w-[1530px] w-full navbar md:px-24 lg:px-44'>
           <Link href='#' className='flex items-center '>
             <Image
               src={Robot}

@@ -3,23 +3,31 @@
 import Collapse from "./components/Collapse";
 import { RobotFAQ } from "../../../assets/image";
 import Image from "next/image";
+import Container from "../Container";
 
 const FAQ = () => {
   return (
     <>
-      <div className='flex flex-col items-center w-full gap-10 mt-10 '>
-        <h1 className='text-2xl font-bold text-center'>PREGUNTAS FRECUENTES</h1>
-        <div className='flex flex-col w-full gap-5'>
-          {listFAQ.map((data, index) => (
-            <Collapse key={index} data={data} />
-          ))}
-        </div>
-        <Image
-          src={RobotFAQ}
-          alt={"robot-faq"}
-          className='absolute hidden right-5 mt-[-120px] lg:inline '
-        />
+      <div className='bg-base-100'>
+        <Container>
+          <div className='flex flex-col items-center w-full gap-10 mt-10 '>
+            <h1 className='text-2xl font-bold text-center'>
+              PREGUNTAS FRECUENTES
+            </h1>
+            <div className='flex flex-col w-full gap-5'>
+              {listFAQ.map((data, index) => (
+                <Collapse key={index} data={data} />
+              ))}
+            </div>
+            <Image
+              src={RobotFAQ}
+              alt={"robot-faq"}
+              className='absolute hidden right-5 mt-[-120px] lg:inline '
+            />
+          </div>
+        </Container>
       </div>
+
       <div id='contact' className='h-10'></div>
     </>
   );
