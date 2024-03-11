@@ -22,3 +22,4 @@ export { default as GoogleSVG } from "./google.svg";
 export { default as StarSVG } from "./star.svg";
 
 export { default as WarningSVG } from "./warning.svg";
+export { default as AlertSVG } from "./alert.svg";
