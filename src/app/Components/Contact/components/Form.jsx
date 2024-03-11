@@ -79,9 +79,7 @@ export default function Form() {
         fetch("https://getform.io/f/12ca030b-28e7-4cb5-a67b-3bd0ea264eff", {
           method: "POST",
           body: formData,
-        })
-          .then((res) => console.log(res))
-          .catch((error) => console.log(error));
+        }).catch((error) => console.log(error));
       },
     });
 
