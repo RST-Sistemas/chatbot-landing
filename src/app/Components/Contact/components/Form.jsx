@@ -5,6 +5,7 @@ import Input from "./Input";
 import TerminosCondiciones from "./TerminosCondiciones";
 import { useFormik } from "formik";
 import { z, ZodError } from "zod";
+import swal from "sweetalert";
 
 export default function Form() {
   const formSubmit = (e) => {
@@ -80,8 +81,15 @@ export default function Form() {
           method: "POST",
           body: formData,
         })
-          .then((res) => console.log(res))
-          .catch((error) => console.log(error));
+          .then((res) => {
+            res.ok &&
+              swal({
+                title: "Gracias por contactarte con nosotros",
+                text: "Nos pondremos en contacto a la brevedad",
+                icon: "success",
+              });
+          })
+          .catch((error) => swal("Error", error, "error"));
       },
     });
 
