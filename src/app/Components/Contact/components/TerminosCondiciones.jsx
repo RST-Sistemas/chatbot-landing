@@ -4,9 +4,10 @@ const TyC = () => {
   return (
     <p className='text-xs sm:text-base text-neutral'>
       Al enviar este formulario, acepta nuestros{" "}
-      <Link href={"#"} className='underline text-primary '>
+      {/* <Link href={"#"} className='underline text-primary '>
         términos y condiciones
-      </Link>{" "}
+      </Link>{" "} */}
+      <Link href="/Terms#aceptacion-de-los-terminos" className='underline text-primary'> términos y condiciones </Link>{" "}
       y nuestra{" "}
       <Link href={"#"} className='underline text-primary '>
         política de privacidad
@@ -16,5 +17,5 @@ const TyC = () => {
     </p>
   );
 };
-
+ 
 export default TyC;
