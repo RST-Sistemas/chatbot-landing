@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link';
 import { useEffect } from 'react';
 
@@ -123,4 +124,4 @@ const Page = () => {
     </div>
   );
 }
-
+export default Page;
